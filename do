@@ -3,13 +3,11 @@
 set -eu
 
 task_deploy() {
-  local user="${1:-deploy-think-about-cdn}"
-
-  rsync \
-    -ruvc \
-    --delete \
-    newsletter \
-    "${user}@turing.holderbaum.me:www/"
+  lftp \
+    -c " \
+      open $DEPLOY_USER:$DEPLOY_PASS@www151.your-server.de; \
+      mirror --reverse --verbose --delete newsletter cdn/newsletter; \
+      "
 }
 
 usage() {
