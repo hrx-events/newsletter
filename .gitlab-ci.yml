@@ -1,0 +1,20 @@
+build:
+  image: "ruby:2.6"
+  stage: "build"
+  script: "./do build"
+  cache:
+    paths:
+      - "build/"
+      - "vendor/"
+  artifacts:
+    paths:
+      - "build/"
+
+deploy:
+  image: "instrumentisto/rsync-ssh"
+  stage: "deploy"
+  script: 
+    - "apk add --no-cache bash"
+    - "./do deploy"
+  needs:
+    - "build"
