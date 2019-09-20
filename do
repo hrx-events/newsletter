@@ -48,8 +48,8 @@ task_deploy() {
     --archive \
     --checksum \
     --verbose \
-    build/ \
-    "$SSH_USER@$SSH_HOST:"
+    build/newsletter/ \
+    "$SSH_USER@$SSH_HOST:newsletter/"
 }
 
 usage() {
