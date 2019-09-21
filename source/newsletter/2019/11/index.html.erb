@@ -43,7 +43,7 @@ date: "September 2019"
 
 <%= partial 'hero',
   locals: {
-    image: '/newsletter/2019/11/pictures.png',
+    image: 'pictures.png',
     link: 'https://think-about.io/events/2019.html'
   } %>
 
@@ -70,7 +70,7 @@ date: "September 2019"
 
 <%= partial 'hero',
   locals: {
-    image: '/newsletter/2019/11/cryptoparty.png',
+    image: 'cryptoparty.png',
     link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/262411839/'
   } %>
 
@@ -109,7 +109,7 @@ date: "September 2019"
 
 <%= partial 'hero',
   locals: {
-    image: '/newsletter/2019/11/meetup-introvert.png',
+    image: 'meetup-introvert.png',
     link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/262967473/'
   } %>
 
@@ -184,13 +184,13 @@ date: "September 2019"
   <tr>
     <td class="stack-column-center" valign="top" style="padding: 0; padding-bottom: 40px; vertical-align: top; text-align: center">
       <a href="https://think-about.io/about-us.html">
-        <img style="margin: 10px" width="100" src="/newsletter/2019/11/chrissi.png"/>
+        <img style="margin: 10px" width="100" src="<%= current_page.url + 'chrissi.png' %>"/>
       </a>
       <a href="https://think-about.io/about-us.html">
-        <img style="margin: 10px" width="100" src="/newsletter/2019/11/jakob.png"/>
+        <img style="margin: 10px" width="100" src="<%= current_page.url + 'jakob.png' %>"/>
       </a>
       <a href="https://think-about.io/about-us.html">
-        <img style="margin: 10px" width="100" src="/newsletter/2019/11/rudi.png"/>
+        <img style="margin: 10px" width="100" src="<%= current_page.url + 'rudi.png' %>"/>
       </a>
     </td>
   </tr>
@@ -198,19 +198,19 @@ date: "September 2019"
   <tr>
     <td class="stack-column-center" valign="top" style="padding: 40px 0; vertical-align: top; text-align: center">
       <a href="https://twitter.com/thinkaboutconf">
-        <img src="/newsletter/2019/11/twitter.png"/>
+        <img src="<%= current_page.url + 'twitter.png' %>"/>
       </a>
       <a href="https://github.com/hrx-events/think-about">
-        <img src="/newsletter/2019/11/github.png"/>
+        <img src="<%= current_page.url + 'github.png' %>"/>
       </a>
       <a href="https://www.meetup.com/de-DE/Think-About-about-Tech-Design-and-their-impact-on-Society/">
-        <img src="/newsletter/2019/11/meetup.png"/>
+        <img src="<%= current_page.url + 'meetup.png' %>"/>
       </a>
       <a href="https://www.xing.com/events/think-about-konferenz-tech-design-society-2028212">
-        <img src="/newsletter/2019/11/xing.png"/>
+        <img src="<%= current_page.url + 'xing.png' %>"/>
       </a>
       <a href="mailto:kontakt@think-about.io">
-        <img src="/newsletter/2019/11/mail.png"/>
+        <img src="<%= current_page.url + 'mail.png' %>"/>
       </a>
     </td>
   </tr>
