@@ -3,107 +3,89 @@ title: "Newsletter #11 Awesome"
 date: "September 2019"
 ---
 
-<% partial 'text_box' do %>
+<% partial 'box' do %>
   <% partial 'title' do %>
-    The Think About! 2019 is over and we have good news: There will be a 2020 edition.
+    The Think About! 2019 is over and we have good news: There will be a 2020
+    edition.
   <% end %>
 
-  <p>The Think About! 2019 happened more than one month ago and we are still overwhelmed by all the positive feedback we continue to receive. The talks were amazing, the sunny weather did it's bit and the food was delicious. But the most important part were our attendees, helpers and speakers who made this event so special in the first place.</p>
+  <% partial 'text' do %>
+    <p>
+      The Think About! 2019 happened more than one month ago and we are still
+      overwhelmed by all the positive feedback we continue to receive. The talks
+      were amazing, the sunny weather did it's bit and the food was delicious. But
+      the most important part were our attendees, helpers and speakers who made
+      this event so special in the first place.
+    </p>
+  <% end %>
 <% end %>
 
-<% partial 'text_box' do %>
+<% partial 'box' do %>
   <% partial 'title' do %>
     The Think About! 2019 talk recordings are online
   <% end %>
 
-  <p>We have finally uploaded all 24 talk recordings of the Think About! 2019. You can either download the videos directly from our website or go to Vimeo to watch them in your browser. Feel free to share the recordings of the talks with others - they are completely free.</p>
+  <% partial 'text' do %>
+    <p>
+      We have finally uploaded all 24 talk recordings of the Think About! 2019.
+      You can either download the videos directly from our website or go to
+      Vimeo to watch them in your browser. Feel free to share the recordings of
+      the talks with others - they are completely free.
+    </p>
+  <% end %>
 
-  <%= partial 'text_box_button', locals: { text: 'Watch the recordings', link: 'https://think-about.io/events/2019.html#recordings' } %>
+  <%= partial 'button', locals: { text: 'Watch the recordings', link: 'https://think-about.io/events/2019.html#recordings' } %>
 <% end %>
 
+<%= partial 'hero', locals: { image: '/newsletter/2019/11/pictures.png', link: 'https://think-about.io/events/2019.html' } %>
 
-            <!-- Page : BEGIN -->
-            <tr>
-                <td style="background-color: #ffffff;">
-                    <a href="https://think-about.io/events/2019.html">
-                        <img src="/newsletter/2019/11/pictures.png" width="600" height="" alt="Picture of Think About! attendees sitting in the outsude area" border="0" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto;" class="g-img">
-                    </a>
-                </td>
-            </tr>
-            <!-- Hero Image, Flush : END -->
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    A new Think About 2019! event page
+  <% end %>
 
-            <tr>
-                <td style="background-color: #ffffff; padding: 20px;">
-                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                            <td style="padding: 20px; font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                <h1 style="margin: 0 0 30px; font-size: 25px; line-height: 30px; color: #333333; font-weight: bold;">A new Think About 2019! event page</h1>
+  <% partial 'text' do %>
+    <p>
+      We are excited to announce that we have a subpage for the Think About!
+      2019. It is filled with pictures, recordings, media coverage and other
+      related content that might give you a perspective on how the event took
+      place.
+    </p>
+  <% end %>
 
-                                <p>We are excited to announce that we have a subpage for the Think About! 2019. It is filled with pictures, recordings, media coverage and other related content that might give you a perspective on how the event took place.</p>
-                            </td>
-                      <tr>
-                            <td>
-                                <!-- Button : BEGIN -->
-                                <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
-                                    <tr>
-                                        <td class="button-td button-td-primary" style="border-radius: 4px; background: #222222;">
-                                            <a class="button-a button-a-primary" href="https://think-about.io/events/2019.html" style="background: #6b3cff; font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Check out the page</a>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <!-- Button : END -->
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- Page : END -->
+  <%= partial 'button', locals: { text: 'Check out the page', link: 'https://think-about.io/events/2019.html' } %>
+<% end %>
 
-            <!-- Separation between sections -->
-            <tr><td style="font-size: 8px;">&nbsp;</td></tr>
+<%= partial 'hero', locals: { image: '/newsletter/2019/11/cryptoparty.png', link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/262411839/' } %>
 
-            <!-- Cryptoparty : BEGIN -->
-            <tr>
-                <td style="background-color: #ffffff;">
-                    <a href="https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/262411839/">
-                        <img src="/newsletter/2019/11/cryptoparty.png" width="600" height="" alt="Picture of a cryptoparty poster" border="0" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto;" class="g-img">
-                    </a>
-                </td>
-            </tr>
-            <!-- Hero Image, Flush : END -->
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    Digital self-defence for everyone - join the next cryptoparty on July 18th
+  <% end %>
 
-            <tr>
-                <td style="background-color: #ffffff; padding: 20px;">
-                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                            <td style="padding: 20px; font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                <h1 style="margin: 0 0 30px; font-size: 25px; line-height: 30px; color: #333333; font-weight: bold;">Digital self-defence for everyone - join the next cryptoparty on July 18th</h1>
+  <% partial 'text' do %>
+    <p>
+      Regardless whether you don't want secret services to read your private
+      communication or you want to prevent your bank account to be stolen - IT
+      security affects everyone, amateurs and professionals. There is no such
+      thing as perfect security, but there are programs making your digital
+      life far more secure. Many people are not willing to read lengthy
+      specialist articles. They want to know how to make their own devices more
+      secure in a simple manner. That's what Cryptoparties are for.
+    </p>
+    <p>
+      Cryptoparties are nonpartisan and non-commercial. The Cologne-Bonn
+      chapter is supported by, besides others, the
+      <%= partial 'link',
+        locals: {
+          text: 'Chaos Computer Club Cologne',
+          link: 'https://koeln.ccc.de/'
+        } %>.
+    </p>
+  <% end %>
 
-                                <p>Regardless whether you don't want secret services to read your private communication or you want to prevent your bank account to be stolen - IT security affects everyone, amateurs and professionals. There is no such thing as perfect security, but there are programs making your digital life far more secure. Many people are not willing to read lengthy specialist articles. They want to know how to make their own devices more secure in a simple manner. That's what Cryptoparties are for.</p>
-
-                                <p>Cryptoparties are nonpartisan and non-commercial. The Cologne-Bonn chapter is supported by, besides others, the <a href="https://koeln.ccc.de/" style="color: #eb18ff; text-decoration: underline;">Chaos Computer Club Cologne</a>.</p>
-
-                            </td>
-                      <tr>
-                            <td>
-                                <!-- Button : BEGIN -->
-                                <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
-                                    <tr>
-                                        <td class="button-td button-td-primary" style="border-radius: 4px; background: #222222;">
-                                            <a class="button-a button-a-primary" href="https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/262411839/" style="background: #6b3cff; font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Join the cryptoparty</a>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <!-- Button : END -->
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- Meetup : END -->
-
-            <!-- Separation between sections -->
-            <tr><td style="font-size: 8px;">&nbsp;</td></tr>
+  <%= partial 'button', locals: { text: 'Join the CryptoParty', link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/262411839/' } %>
+<% end %>
 
              <!-- Meetup : BEGIN -->
             <tr>
