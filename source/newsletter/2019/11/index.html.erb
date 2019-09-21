@@ -150,66 +150,68 @@ date: "September 2019"
     } %>
 <% end %>
 
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    See you soon!
+  <% end %>
 
-            <!-- Goodbye Text : BEGIN -->
-            <tr>
-                <td style="background-color: #ffffff; padding: 20px;">
-                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                            <td style="padding: 20px; font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                <h1 style="margin: 0 0 30px; font-size: 25px; line-height: 30px; color: #333333; font-weight: bold;">See you soon!</h1>
+  <% partial 'text' do %>
+    <p>
+      We have already started to plan the next Think About! for 2020 :) We hope
+      to see a lot of you there again. Until then feel free to come to one of
+      our
 
-                                <p>We have already started to plan the next Think About! for 2020 :) We hope to see a lot of you there again. Until then feel free to come to one of our <a href="https://www.meetup.com/de-DE/Think-About-about-Tech-Design-and-their-impact-on-Society/" style="color: #eb18ff; text-decoration: underline;">Meetups</a> or just follow us on <a href="https://twitter.com/thinkaboutconf" style="color: #eb18ff; text-decoration: underline;">Twitter</a>.</p> 
+      <%= partial 'link',
+        locals: {
+          text: 'Meetups',
+          link: 'https://www.meetup.com/de-DE/Think-About-about-Tech-Design-and-their-impact-on-Society/'
+        } %>
 
-                                <p>Chrissi, Jakob and Rudi the dog</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <!-- Column : BEGIN -->
-                            <td class="stack-column-center" valign="top" style="padding: 0; padding-bottom: 40px; vertical-align: top; text-align: center">
-                              <a href="https://think-about.io/about-us.html">
-                                <img style="margin: 10px" width="100" src="/newsletter/2019/11/chrissi.png"/>
-                              </a>
-                              <a href="https://think-about.io/about-us.html">
-                                <img style="margin: 10px" width="100" src="/newsletter/2019/11/jakob.png"/>
-                              </a>
-                              <a href="https://think-about.io/about-us.html">
-                                <img style="margin: 10px" width="100" src="/newsletter/2019/11/rudi.png"/>
-                              </a>
-                            </td>
-                            <!-- Column : END -->
-                        </tr>
-                    </table>
+      or just follow us on
 
-            <!-- Footer Image : BEGIN -->
-  
-            <!-- Footer Image : END -->
+      <%= partial 'link',
+        locals: {
+          text: 'Twitter',
+          link: 'https://twitter.com/thinkaboutconf'
+        } %>.
+    </p>
 
-                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                            <!-- Column : BEGIN -->
-                            <td class="stack-column-center" valign="top" style="padding: 40px 0; vertical-align: top; text-align: center">
-                                <a href="https://twitter.com/thinkaboutconf">
-                                    <img src="/newsletter/2019/11/twitter.png"/>
-                                </a>
-                                <a href="https://github.com/hrx-events/think-about">
-                                    <img src="/newsletter/2019/11/github.png"/>
-                                </a>
-                                <a href="https://www.meetup.com/de-DE/Think-About-about-Tech-Design-and-their-impact-on-Society/">
-                                    <img src="/newsletter/2019/11/meetup.png"/>
-                                </a>
-                                <a href="https://www.xing.com/events/think-about-konferenz-tech-design-society-2028212">
-                                    <img src="/newsletter/2019/11/xing.png"/>
-                                </a>
-                                <a href="mailto:kontakt@think-about.io">
-                                    <img src="/newsletter/2019/11/mail.png"/>
-                                </a>
-                            </td>
-                            <!-- Column : END -->
-                        </tr>
-                    </table>
+    <p>
+      Chrissi, Jakob and Rudi the dog
+    </p>
+  <% end %>
 
+  <tr>
+    <td class="stack-column-center" valign="top" style="padding: 0; padding-bottom: 40px; vertical-align: top; text-align: center">
+      <a href="https://think-about.io/about-us.html">
+        <img style="margin: 10px" width="100" src="/newsletter/2019/11/chrissi.png"/>
+      </a>
+      <a href="https://think-about.io/about-us.html">
+        <img style="margin: 10px" width="100" src="/newsletter/2019/11/jakob.png"/>
+      </a>
+      <a href="https://think-about.io/about-us.html">
+        <img style="margin: 10px" width="100" src="/newsletter/2019/11/rudi.png"/>
+      </a>
+    </td>
+  </tr>
 
-                </td>
-            </tr>
-            <!-- Goodbye Text : END -->
+  <tr>
+    <td class="stack-column-center" valign="top" style="padding: 40px 0; vertical-align: top; text-align: center">
+      <a href="https://twitter.com/thinkaboutconf">
+        <img src="/newsletter/2019/11/twitter.png"/>
+      </a>
+      <a href="https://github.com/hrx-events/think-about">
+        <img src="/newsletter/2019/11/github.png"/>
+      </a>
+      <a href="https://www.meetup.com/de-DE/Think-About-about-Tech-Design-and-their-impact-on-Society/">
+        <img src="/newsletter/2019/11/meetup.png"/>
+      </a>
+      <a href="https://www.xing.com/events/think-about-konferenz-tech-design-society-2028212">
+        <img src="/newsletter/2019/11/xing.png"/>
+      </a>
+      <a href="mailto:kontakt@think-about.io">
+        <img src="/newsletter/2019/11/mail.png"/>
+      </a>
+    </td>
+  </tr>
+<% end %>
