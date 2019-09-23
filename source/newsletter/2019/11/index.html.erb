@@ -5,40 +5,61 @@ date: "September 2019"
 
 <% partial 'box' do %>
   <% partial 'title' do %>
-    The Think About! 2019 is over and we have good news: There will be a 2020
-    edition.
+    Long time no see! 👋
   <% end %>
+
+  <%= partial 'image',
+    locals: {
+      image: 'hello.gif',
+      alt: 'Penguin waving it\'s wing to say hello!'
+    } %>
 
   <% partial 'text' do %>
     <p>
-      The Think About! 2019 happened more than one month ago and we are still
-      overwhelmed by all the positive feedback we continue to receive. The talks
-      were amazing, the sunny weather did it's bit and the food was delicious. But
-      the most important part were our attendees, helpers and speakers who made
-      this event so special in the first place.
+      We are very happy to announce: after a few weeks off we are finally back
+      on track towards the Think About! 2020. We got tons of feedback, good
+      wishes and encouraging words and are more than excited to make the next
+      installment of our little conference even better.
     </p>
   <% end %>
 <% end %>
 
+<%= partial 'hero',
+  locals: {
+    image: 'savethedate.png',
+    alt: 'People lining up to get into the Think About! 2019 Venue',
+    link: 'https://think-about.io/events/2019.html'
+  } %>
+
+
 <% partial 'box' do %>
   <% partial 'title' do %>
-    The Think About! 2019 talk recordings are online
+    Save the Date!
   <% end %>
 
   <% partial 'text' do %>
     <p>
-      We have finally uploaded all 24 talk recordings of the Think About! 2019.
-      You can either download the videos directly from our website or go to
-      Vimeo to watch them in your browser. Feel free to share the recordings of
-      the talks with others - they are completely free.
+      First and foremost, we have a date for next years conference. It will
+      take place in the same Cinema again on the <b>4th and 5th of June
+      2020</b>.
+    </p>
+    <p>
+      Early bird ticket sale will start on <b>November 15th</b>. If you
+      happened to submit the feedback form during the event, you can use the
+      displayed promo code to get 10% off the early bird ticket price.
+    </p>
+    <p>
+      The Ticket Prices will stay the same: <b>380 EUR</b> for the early birds
+      and 500 EUR for the regular ticket. And we will have the supporter
+      tickets again. For 750 EUR you can help us to give away as many
+      <%= partial 'link',
+        locals: {
+          text: 'solidarity tickets',
+          link: 'https://think-about.io/tickets.html#solidarity'
+        } %>
+      as possible.
     </p>
   <% end %>
-
-  <%= partial 'button',
-    locals: {
-      text: 'Watch the recordings',
-      link: 'https://think-about.io/events/2019.html#recordings'
-    } %>
 <% end %>
 
 <%= partial 'hero',
@@ -50,15 +71,58 @@ date: "September 2019"
 
 <% partial 'box' do %>
   <% partial 'title' do %>
-    A new Think About 2019! event page
+    The first Talks and Keynotes are saved!
   <% end %>
 
   <% partial 'text' do %>
     <p>
-      We are excited to announce that we have a subpage for the Think About!
-      2019. It is filled with pictures, recordings, media coverage and other
-      related content that might give you a perspective on how the event took
-      place.
+      In the last few weeks we were contacting many people from our network to
+      source the first set of amazing speakers for next year. A few already
+      confirmed. Besides many others we will have talks from:
+
+      <%= partial 'link',
+        locals: {
+          text: 'Amr Abdelwahab',
+          link: 'https://twitter.com/amrAbdelwahab'
+        } %>,
+      <%= partial 'link',
+        locals: {
+          text: 'Cassandra H. Leung',
+          link: 'https://twitter.com/Tweet_Cassandra'
+        } %>,
+      <%= partial 'link',
+        locals: {
+          text: 'Chimmy Kalu',
+          link: 'https://twitter.com/geekaspora'
+        } %>,
+      <%= partial 'link',
+        locals: {
+          text: 'Laura Linda Laugwitz',
+          link: 'https://twitter.com/lauralindal'
+        } %>,
+      <%= partial 'link',
+        locals: {
+          text: 'Maryam Umar',
+          link: 'https://twitter.com/maryamumar'
+        } %>
+      and
+      <%= partial 'link',
+        locals: {
+          text: 'Vanessa Böhner',
+          link: 'https://twitter.com/vannsl'
+        } %>.
+    </p>
+    <p>
+      We also happened to secure the first of four keynotes. The amazing
+
+      <%= partial 'link',
+        locals: {
+          text: 'Kim Crayton',
+          link: 'https://twitter.com/KimCrayton1'
+        } %>
+
+      will open the second day of the Think About! 2020 with her Keynote about
+      Exclusionary Practices.
     </p>
   <% end %>
 
