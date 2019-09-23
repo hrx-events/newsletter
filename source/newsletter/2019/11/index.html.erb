@@ -64,8 +64,8 @@ date: "September 2019"
 
 <%= partial 'hero',
   locals: {
-    image: 'pictures.png',
-    alt: '',
+    image: 'talks.png',
+    alt: 'Vimla giving the closing keynote of the Think About! 2019',
     link: 'https://think-about.io/events/2019.html'
   } %>
 
@@ -142,80 +142,108 @@ date: "September 2019"
 
 <% partial 'box' do %>
   <% partial 'title' do %>
-    Digital self-defence for everyone - join the next cryptoparty on July 18th
+    Digital self-defence for everyone - join the next cryptoparty on October 17th
   <% end %>
 
   <% partial 'text' do %>
     <p>
-      Regardless whether you don't want secret services to read your private
-      communication or you want to prevent your bank account to be stolen - IT
-      security affects everyone, amateurs and professionals. There is no such
-      thing as perfect security, but there are programs making your digital
-      life far more secure. Many people are not willing to read lengthy
-      specialist articles. They want to know how to make their own devices more
-      secure in a simple manner. That's what Cryptoparties are for.
+      CryptoParties are free and open for everyone, but especially ​for
+      those without prior knowledge, who haven't yet attended one.
     </p>
     <p>
-      Cryptoparties are nonpartisan and non-commercial. The Cologne-Bonn
-      chapter is supported by, besides others, the
-      <%= partial 'link',
-        locals: {
-          text: 'Chaos Computer Club Cologne',
-          link: 'https://koeln.ccc.de/'
-        } %>.
+      CryptoParty is a decentralized movement with events happening all over
+      the world. The goal is to pass on knowledge about protecting yourself in
+      the digital space. This can include encrypted communication, preventing
+      being tracked while browsing the web, and general security advice
+      regarding computers and smartphones.
+    </p>
+
+    <p>
+      Bring you questions, bring you devices bring your friends 🥳
     </p>
   <% end %>
 
   <%= partial 'button',
     locals: {
       text: 'Join the CryptoParty',
-      link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/262411839/'
+      link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/265094507/'
     } %>
 <% end %>
 
 <%= partial 'hero',
   locals: {
-    image: 'meetup-introvert.png',
-    alt: '',
-    link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/262967473/'
+    image: 'meetups.png',
+    alt: 'Picture from a talk given on a meetup',
+    link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/past/'
   } %>
 
 <% partial 'box' do %>
   <% partial 'title' do %>
-    Join our meetup: "Succeeding as an Introvert" on July 25th
+    We had two Meetups since the last Newsletter!
   <% end %>
 
   <% partial 'text' do %>
     <p>
-      We are super excited to have won over
+      Two fantastic Meetups took place. On August 8th,
       <%= partial 'link',
         locals: {
-          text: 'Elizabeth Zagroba',
-          link: 'https://twitter.com/ezagroba'
+          text: 'Mirjam Bäuerlein',
+          link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/263479027/'
         } %>
-      who will give a talk at our Think About! meetup which is hosted by
-      <%= partial 'link',
-        locals: {
-          text: 'Dunckelfeld',
-          link: 'https://www.dunckelfeld.de/en/'
-        } %>.
+      talked about how to structure your CSS to make it more reusable and
+      maintainable.
     </p>
 
     <p>
-      Elizabeth tests software at Mendix in Rotterdam, The Netherlands. She was
-      the keynote speaker at Let’s Test in South Africa in 2018, and she’s
-      spoken at Agile Testing Days’ and other conferences in North America and
-      Europe. Her article about mind maps became one of the most viewed on
-      Ministry of Testing Dojo in 2017.
+      One month later, on September 10th,
+      <%= partial 'link',
+        locals: {
+          text: 'Tatiana Mac',
+          link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/263549213/'
+        } %>
+      explained how we can build Socially Inclusive Design Systems.
+    </p>
+    <p>
+      Both meetups were sponsored by
+      <%= partial 'link',
+        locals: {
+          text: 'Sevenval',
+          link: 'https://www.sevenval.com/'
+        } %>
+      and took place in there awesome location.
     </p>
   <% end %>
-
-  <%= partial 'button',
-    locals: {
-      text: 'Join the Meetup',
-      link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/262967473/'
-    } %>
 <% end %>
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    KalkSpace Coworking - Update
+  <% end %>
+
+  <%= partial 'image',
+    locals: {
+      image: 'kalkspace.png',
+      alt: 'Logo of the KalkSpace Coworking Location'
+    } %>
+
+  <% partial 'text' do %>
+    <p>
+      KalkSpace is a coworking community full of creative people in Kalk.
+      Together they want to create a space, where people can not just work, but
+      also have a place for their ideas and initiatives.
+    </p>
+    <p>
+      They open on October 1st and are still looking for coworkers. If you are
+      interested, get to know them:
+      <%= partial 'link',
+        locals: {
+          text: 'kalk.space',
+          link: 'https://kalk.space/'
+        } %>
+    </p>
+  <% end %>
+<% end %>
+
 
 <% partial 'box' do %>
   <% partial 'title' do %>
@@ -224,9 +252,8 @@ date: "September 2019"
 
   <% partial 'text' do %>
     <p>
-      We have already started to plan the next Think About! for 2020 :) We hope
-      to see a lot of you there again. Until then feel free to come to one of
-      our
+      We hope to see a lot of you at the Think About! 2020 again. Until then
+      feel free to come to one of our
 
       <%= partial 'link',
         locals: {
