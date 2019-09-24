@@ -22,6 +22,12 @@ date: "September 2019"
       installment of our little conference even better.
     </p>
   <% end %>
+
+  <%= partial 'button',
+    locals: {
+      text: 'Visit our Website',
+      link: 'https://think-about.io/events/2019.html'
+    } %>
 <% end %>
 
 <%= partial 'hero',
