@@ -1,0 +1,44 @@
+---
+title: "Important News!"
+blank: true
+preheader_text: "We switched to a new Email Software.."
+---
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    We switched to a new Email Software
+  <% end %>
+
+  <%= partial 'image',
+    locals: {
+      image: 'hello.gif',
+      alt: 'Penguin waving it\'s wing to say hello!'
+    } %>
+
+  <% partial 'text' do %>
+    <p>
+      In the past weeks we had a ton of issues with email delivery using our
+      PHP based Open Source newsletter software. Most "Activation Link" emails
+      were rejected by the receiving mailserver due to a high spam score.
+    </p>
+    <p>
+      To avoid this, we decided to move the mailinglist to a professional
+      newsletter service provider. After a bit of research we decided on a paid
+      subscription with <a href="https://cleverreach.de/">CleverReach</a>.
+    </p>
+    <p>
+      They are a German company and they store all their customers data in
+      European data centers under GDPR compliance.
+    </p>
+    <p>
+      We understand that this is a drastic change, coming from self-hosted
+      software at Hetzner, but we see it as neccessary in order to preserve the
+      newsletter subscription rate and the quality of the content. In case you
+      do not agree with your email address being stored at CleverReach, feel
+      free to <a href="#">unsubscribe</a> from this list.
+    </p>
+    <p>
+      All the best to you from the Think About! Orga Team.
+    </p>
+  <% end %>
+<% end %>
