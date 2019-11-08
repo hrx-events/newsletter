@@ -272,8 +272,7 @@ body > div > a {
 
         <!-- Visually Hidden Preheader Text : BEGIN -->
         <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: 'Montserrat', sans-serif;">
-          <!-- TODO frontmatter -->
-            The Think About! happened more than one month ago and the talk recordings are finally available.
+          <%= current_page.data.preheader_text %>
         </div>
         <!-- Visually Hidden Preheader Text : END -->
 
@@ -326,6 +325,7 @@ body > div > a {
             </tr>
             <!-- Header : END -->
 
+            <% unless current_page.data.blank %>
             <!-- Hero Image, Flush : BEGIN -->
             <tr>
                 <td style="background-color: #ffffff;">
@@ -336,6 +336,7 @@ body > div > a {
                 </td>
             </tr>
             <!-- Hero Image, Flush : END -->
+            <% end %>
 
 <%= yield %>
 
@@ -347,7 +348,7 @@ body > div > a {
 	        <tr>
 	            <td style="padding: 20px; font-family: 'Montserrat', sans-serif; font-size: 12px; line-height: 15px; text-align: center; color: #888888;">
                         <br>Holderbaum GmbH<br>
-                            <span >Adolphstr. 18, 50679 Köln // Ust-ID-Nr.: DE319672148 // Steuer-Nr.: 271/5745/1648 // Handelsregisternummer: HRB 94561 // Registergericht: Amtsgericht Köln // Geschäftsführer/-innen: Christina Holderbaum &amp; Jakob Holderbaum<br>
+                            <span >Holbeinstr. 59, 50226 Frechen // Ust-ID-Nr.: DE319672148 // Steuer-Nr.: 271/5745/1648 // Handelsregisternummer: HRB 94561 // Registergericht: Amtsgericht Köln // Geschäftsführer/-innen: Christina Holderbaum &amp; Jakob Holderbaum<br>
                             </span>
                         <br> 
                             <a href="https://think-about.io/privacy.html" style="color: #888888; text-decoration: underline;">Privacy Policy</a>
