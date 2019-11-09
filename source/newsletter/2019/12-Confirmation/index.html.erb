@@ -1,0 +1,57 @@
+---
+title: "You recently signed up to our Newsletter"
+blank: true
+preheader_text: "You recently signed up to our Newsletter"
+---
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    You recently signed up to our Newsletter ...
+  <% end %>
+
+  <%= partial 'image',
+    locals: {
+      image: 'sad.svg',
+      alt: 'Really sad monster.'
+    } %>
+
+  <% partial 'text' do %>
+    <p>
+      ... but never got the confirmation mail. 😥
+    </p>
+    <p>
+      We had some technical issues with our newsletter software. Those are now
+      fixed, since we switched to a paid subscription with a new provider, that
+      is <a href="https://cleverreach.de/">CleverReach</a>.
+    <p>
+      They are a German company and they store all their customers data in
+      European data centers under GDPR compliance.
+    </p>
+    <p>
+      If you still want to be subscribed to our newsletter, just click the
+      subscribe button below to finalize your subscription.
+    </p>
+  <% end %>
+
+  <%= partial 'button',
+    locals: {
+      text: 'Subscribe Now',
+      link: 'https://think-about.io/newsletter/thank-you.html'
+    } %>
+<% end %>
+
+<% partial 'box' do %>
+  <% partial 'text' do %>
+    <p>
+      If you've decided against the subscription by now you can <a
+      href="{UNSUBSCRIBE}">cancel your subscription here</a>.
+
+      We will delete all email addresses that have not explicitely clicked on
+      the subscribe button above by the end of November 2019.
+    </p>
+    <p>
+      All the best wishes and sorry for any inconvenience,<br>your Think About!
+      Orga Team.
+    </p>
+  <% end %>
+<% end %>
