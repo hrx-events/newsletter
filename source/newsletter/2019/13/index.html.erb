@@ -1,0 +1,174 @@
+---
+title: "Newsletter #13"
+date: "November 2019"
+preheader_text: "Early Bird Sale is about to start"
+---
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    We have exciting News!
+  <% end %>
+
+  <% partial 'text' do %>
+    <p>
+      The first ever Think About! conference took place more than five months ago.
+    </p>
+    <p>
+      We are thrilled to announce, that on Friday the 15th we will start the
+      Early Bird ticket sale at 8am CET.
+    </p>
+  <% end %>
+<% end %>
+
+<%= partial 'hero',
+  locals: {
+    image: 'speakers.jpg',
+    alt: 'People lining up to get into the Think About! 2019 Venue',
+    link: 'https://think-about.io/speakers.html'
+  } %>
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    Meet some of next years Speakers
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      We are actively sourcing for amazing speakers. While this is an ongoing
+      process, we already found eight amazing individuals who will be in our
+      lineup next year. Here is a short introduction:
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'kim_crayton',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Keynote: Unintended Consequences
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      Our first keynote is decided. The amazing
+      <%= partial 'link',
+        locals: {
+          text: 'Kim Crayton',
+          link: 'https://think-about.io/events/2020/talks/unintended_consequences.html'
+        } %>
+      will talk about inclusive and diverse workplaces in the opening keynote
+      on the second day of the conference.
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'maryam_umar',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Tech Talk: Please, Release me!
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Maryam Umar',
+          link: 'https://think-about.io/events/2020/talks/please_release_me.html'
+        } %>
+      presents her take on sustainable delivery practices and her experiences as Head of Quality.
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'eva_penzeymoog',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Design Talk: Designing Against Domestic Violence
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      All the way from America,
+      <%= partial 'link',
+        locals: {
+          text: 'Eva PenzeyMoog',
+          link: 'https://think-about.io/events/2020/talks/designing_against_domestic_violence.html'
+        } %>
+      comes to Cologne in 2020 to present measure on how to prevent that the
+      products we build can be tools of abuse.
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'tatiana_mac',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Society Talk: Our Banal Binary
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      Previously guest at one of our meetups,
+      <%= partial 'link',
+        locals: {
+          text: 'Tatiana Mac',
+          link: 'https://think-about.io/events/2020/talks/banal_binary.html'
+        } %>
+      introduces us to the impact imposed by the binary nature of digital
+      systems on our perception of the world and the society we created.
+    </p>
+  <% end %>
+<% end %>
+
+<%= partial 'hero',
+  locals: {
+    image: 'monsters.png',
+    alt: 'People lining up to get into the Think About! 2019 Venue',
+    link: 'https://think-about.io/speakers.html'
+  } %>
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    Meet our adorable new Monsters!
+  <% end %>
+
+  <% partial 'text' do %>
+    <p>
+      As the second Think About! will be a new iteration of our conference
+      concept, the monsters should be the same. So we designed a new version of
+      those three well known buddies. What do you think?
+    </p>
+  <% end %>
+
+  <%= partial 'image',
+    locals: {
+      image: 'Think_About_Character_Tech.png',
+      alt: '',
+      width: 360
+    } %>
+
+  <%= partial 'image',
+    locals: {
+      image: 'Think_About_Character_Design.png',
+      alt: '',
+      width: 360
+    } %>
+
+  <%= partial 'image',
+    locals: {
+      image: 'Think_About_Character_Society.png',
+      alt: '',
+      width: 360
+    } %>
+<% end %>
+
