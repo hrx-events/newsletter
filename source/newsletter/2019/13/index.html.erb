@@ -105,6 +105,27 @@ preheader_text: "Early Bird Sale is about to start"
 <% partial 'box' do %>
   <%= partial 'head',
     locals: {
+      name: 'laura_linda_laugwitz',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Tech Talk: The Miseducation of This Machine
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Laura Linda Laugwitz',
+          link: 'https://think-about.io/events/2020/talks/miseducation_of_this_machine.html'
+        } %>
+      will make Machine Learning tangible and help you become a better machine teacher.
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
       name: 'eva_penzeymoog',
       alt: ''
     } %>
