@@ -211,6 +211,27 @@ preheader_text: "Early Bird Sale is about to start"
   <% end %>
 <% end %>
 
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'cassandra_leung',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Society Talk: Pipeline: A Chinese Woman’s Journey in(to) a White Man’s World
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Cassandra H. Leung',
+          link: 'https://think-about.io/events/2020/talks/pipeline.html'
+        } %>
+      will offer you a seemingly rare but important glimpse into what it’s like to journey through life and through the tech industry as a Chinese woman.
+    </p>
+  <% end %>
+<% end %>
+
 <%= partial 'hero',
   locals: {
     image: 'monsters.png',
