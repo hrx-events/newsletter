@@ -170,6 +170,27 @@ preheader_text: "Early Bird Sale is about to start"
 <% partial 'box' do %>
   <%= partial 'head',
     locals: {
+      name: 'amr_abdelwahab',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Society Talk: Privilege as a technical debt
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Amr Abdelwahab',
+          link: 'https://think-about.io/events/2020/talks/privilege_as_a_technical_debt.html'
+        } %>
+      will add the missing contexts to topics such as political correctness, diversity and privilege in tech and will show what happens to products that ignore those topics.
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
       name: 'tatiana_mac',
       alt: ''
     } %>
