@@ -280,3 +280,66 @@ preheader_text: "Early Bird Sale is about to start"
     } %>
 <% end %>
 
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    See you soon!
+  <% end %>
+
+  <% partial 'text' do %>
+    <p>
+      We hope to see a lot of you at the Think About! 2020. Until then
+      feel free to come to one of our
+
+      <%= partial 'link',
+        locals: {
+          text: 'Meetups',
+          link: 'https://www.meetup.com/de-DE/Think-About-about-Tech-Design-and-their-impact-on-Society/'
+        } %>
+
+      or just follow us on
+
+      <%= partial 'link',
+        locals: {
+          text: 'Twitter',
+          link: 'https://twitter.com/thinkaboutconf'
+        } %>.
+    </p>
+
+    <p>
+      Chrissi, Jakob and Rudi the dog
+    </p>
+  <% end %>
+
+  <tr>
+    <td class="stack-column-center" valign="top" style="padding: 0; padding-bottom: 40px; vertical-align: top; text-align: center">
+      <a href="https://think-about.io/about-us.html">
+        <img style="margin: 10px" width="100" src="<%= current_page.url + 'chrissi.png' %>"/>
+      </a>
+      <a href="https://think-about.io/about-us.html">
+        <img style="margin: 10px" width="100" src="<%= current_page.url + 'jakob.png' %>"/>
+      </a>
+      <a href="https://think-about.io/about-us.html">
+        <img style="margin: 10px" width="100" src="<%= current_page.url + 'rudi.png' %>"/>
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="stack-column-center" valign="top" style="padding: 40px 0; vertical-align: top; text-align: center">
+      <a href="https://twitter.com/thinkaboutconf">
+        <img src="<%= current_page.url + 'twitter.png' %>"/>
+      </a>
+      <a href="https://github.com/holderbaum-io/">
+        <img src="<%= current_page.url + 'github.png' %>"/>
+      </a>
+      <a href="https://www.meetup.com/de-DE/Think-About-about-Tech-Design-and-their-impact-on-Society/">
+        <img src="<%= current_page.url + 'meetup.png' %>"/>
+      </a>
+      <a href="mailto:kontakt@think-about.io">
+        <img src="<%= current_page.url + 'mail.png' %>"/>
+      </a>
+    </td>
+  </tr>
+<% end %>
+
