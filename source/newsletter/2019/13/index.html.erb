@@ -84,6 +84,27 @@ preheader_text: "Early Bird Sale is about to start"
 <% partial 'box' do %>
   <%= partial 'head',
     locals: {
+      name: 'vanessa_boehner',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Tech Talk: Testing Techniques for Component Driven Development
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Vanessa Böhner',
+          link: 'https://think-about.io/events/2020/talks/component_driven_development.html'
+        } %>
+      will answer the question how Component Driven Development in the front-end has impacted the way we test our software.
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
       name: 'eva_penzeymoog',
       alt: ''
     } %>
