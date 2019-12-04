@@ -109,46 +109,6 @@ preheader_text: "Merry Christmas"
   <% end %>
 <% end %>
 
-<%= partial 'hero',
-  locals: {
-    image: 'monsters.png',
-    alt: 'People lining up to get into the Think About! 2019 Venue',
-    link: 'https://think-about.io/speakers.html'
-  } %>
-
-<% partial 'box' do %>
-  <% partial 'title' do %>
-    Meet our adorable new Monsters!
-  <% end %>
-
-  <% partial 'text' do %>
-    <p>
-      As the second Think About! will be a new iteration of our conference
-      concept, the monsters should also change. So we designed a new version of
-      those three well known buddies. What do you think?
-    </p>
-  <% end %>
-
-  <%= partial 'image',
-    locals: {
-      image: 'tech_old_new.png',
-      alt: '',
-    } %>
-
-  <%= partial 'image',
-    locals: {
-      image: 'design_old_new.png',
-      alt: '',
-    } %>
-
-  <%= partial 'image',
-    locals: {
-      image: 'society_old_new.png',
-      alt: '',
-    } %>
-<% end %>
-
-
 <% partial 'box' do %>
   <% partial 'title' do %>
     See you soon!
