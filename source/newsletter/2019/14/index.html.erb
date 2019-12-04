@@ -82,20 +82,29 @@ preheader_text: "Merry Christmas"
 <% partial 'box' do %>
   <%= partial 'head',
     locals: {
-      name: 'maryam_umar',
+      name: 'mirjam_baeuerlein',
       alt: ''
     } %>
   <% partial 'title' do %>
-    Tech Talk: Please, Release me!
+    Tech Talk: Treat yourself – a tale about dog training and test-driven development
   <% end %>
   <% partial 'text' do %>
     <p>
       <%= partial 'link',
         locals: {
-          text: 'Maryam Umar',
-          link: 'https://think-about.io/events/2020/talks/please_release_me.html'
+          text: 'Mirjam Bäuerlein',
+          link: 'https://think-about.io/events/2020/talks/treat_yourself.html'
         } %>
-      presents her take on sustainable delivery practices and her experiences as Head of Quality.
+      will talk about what you can take away from Dog Training to become better at TDD. 
+    </p>
+    <p>
+      Side note: Mirjam founded 
+    <%= partial 'link',
+        locals: {
+          text: 'Conference Buddy',
+          link: 'https://www.conferencebuddy.io/'
+        } %>
+        which is a platform for people who want to attend a tech conference but do not want to go alone. We hopefully will be having conference buddies at the Think About! next year again :)
     </p>
   <% end %>
 <% end %>
