@@ -1,0 +1,342 @@
+---
+title: "Newsletter #13"
+date: "November 2019"
+preheader_text: "We have exciting news: The Early Bird Sale starts in 48 hours!"
+---
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    We have exciting news: <br>The Early Bird Sale starts in 48 hours!
+  <% end %>
+
+  <% partial 'text' do %>
+    <p>
+      We are thrilled to announce, that on <b>Friday the 15th at 8am CET</b> we will start the
+      Early Bird ticket sale for the Think About! 2020. We only have 50 early bird tickets available so you might want to hurry ;)
+    </p>
+  <% end %>
+
+  <%= partial 'button',
+    locals: {
+      text: 'Get Your Ticket',
+      link: 'https://think-about.io/tickets.html'
+    } %>
+<% end %>
+
+<%= partial 'hero',
+  locals: {
+    image: 'speakers.jpg',
+    alt: 'People lining up to get into the Think About! 2019 Venue',
+    link: 'https://think-about.io/speakers.html'
+  } %>
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    Meet some of next year's Speakers
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      At the moment we are actively sourcing for next year's speakers. While this is an ongoing
+      process, <b>we already found nine amazing individuals</b> who will be in our
+      lineup. Here is a short introduction:
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'kim_crayton',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Keynote: Unintended Consequences
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      Our first keynote (out of four) is decided. The amazing
+      <%= partial 'link',
+        locals: {
+          text: 'Kim Crayton',
+          link: 'https://think-about.io/events/2020/talks/unintended_consequences.html'
+        } %>
+      will talk about inclusive and diverse workplaces in the opening keynote
+      on the second day of the conference.
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'maryam_umar',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Tech Talk: Please, Release me!
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Maryam Umar',
+          link: 'https://think-about.io/events/2020/talks/please_release_me.html'
+        } %>
+      presents her take on sustainable delivery practices and her experiences as Head of Quality.
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'vanessa_boehner',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Tech Talk: Testing Techniques for Component Driven Development
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Vanessa Böhner',
+          link: 'https://think-about.io/events/2020/talks/component_driven_development.html'
+        } %>
+      will answer the question how Component Driven Development in the front-end has impacted the way we test our software.
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'laura_linda_laugwitz',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Tech Talk: The Miseducation of This Machine
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Laura Linda Laugwitz',
+          link: 'https://think-about.io/events/2020/talks/miseducation_of_this_machine.html'
+        } %>
+      will explain us why you are a much better learner than any machine and how to use this knowledge to become a better machine teacher.
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'chimmy_kalu',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Design Talk: Accessibility is a Dirty Word
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Chimmy Kalu',
+          link: 'https://think-about.io/events/2020/talks/accessibility_is_a_dirty_word.html'
+        } %>
+      will not only give advise on how to create accessible products, she will also share her insights on inclusive design.
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'eva_penzeymoog',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Design Talk: Designing Against Domestic Violence
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      All the way from America,
+      <%= partial 'link',
+        locals: {
+          text: 'Eva PenzeyMoog',
+          link: 'https://think-about.io/events/2020/talks/designing_against_domestic_violence.html'
+        } %>
+      comes to Cologne in 2020 to present measures on how to prevent usage of
+      the products we build as tools of abuse.
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'amr_abdelwahab',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Society Talk: Privilege as a technical debt
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Amr Abdelwahab',
+          link: 'https://think-about.io/events/2020/talks/privilege_as_a_technical_debt.html'
+        } %>
+      will add the missing contexts to topics such as political correctness, diversity and privilege in tech and will show what happens to products that ignore those topics.
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'tatiana_mac',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Society Talk: Our Banal Binary
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      Previously guest at one of our meetups,
+      <%= partial 'link',
+        locals: {
+          text: 'Tatiana Mac',
+          link: 'https://think-about.io/events/2020/talks/banal_binary.html'
+        } %>
+      introduces us to the impact imposed by the binary nature of digital
+      systems on our perception of the world and the society we created.
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'cassandra_leung',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Society Talk: Pipeline: A Chinese Woman’s Journey in(to) a White Man’s World
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Cassandra H. Leung',
+          link: 'https://think-about.io/events/2020/talks/pipeline.html'
+        } %>
+      will offer you a seemingly rare but important glimpse into what it’s like to journey through life and through the tech industry as a Chinese woman.
+    </p>
+  <% end %>
+<% end %>
+
+<%= partial 'hero',
+  locals: {
+    image: 'monsters.png',
+    alt: 'People lining up to get into the Think About! 2019 Venue',
+    link: 'https://think-about.io/speakers.html'
+  } %>
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    Meet our adorable new Monsters!
+  <% end %>
+
+  <% partial 'text' do %>
+    <p>
+      As the second Think About! will be a new iteration of our conference
+      concept, the monsters should also change. So we designed a new version of
+      those three well known buddies. What do you think?
+    </p>
+  <% end %>
+
+  <%= partial 'image',
+    locals: {
+      image: 'tech_old_new.png',
+      alt: '',
+    } %>
+
+  <%= partial 'image',
+    locals: {
+      image: 'design_old_new.png',
+      alt: '',
+    } %>
+
+  <%= partial 'image',
+    locals: {
+      image: 'society_old_new.png',
+      alt: '',
+    } %>
+<% end %>
+
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    See you soon!
+  <% end %>
+
+  <% partial 'text' do %>
+    <p>
+      We hope to see a lot of you at the Think About! 2020. Until then
+      feel free to come to one of our
+
+      <%= partial 'link',
+        locals: {
+          text: 'Meetups',
+          link: 'https://www.meetup.com/de-DE/Think-About-about-Tech-Design-and-their-impact-on-Society/'
+        } %>
+
+      or just follow us on
+
+      <%= partial 'link',
+        locals: {
+          text: 'Twitter',
+          link: 'https://twitter.com/thinkaboutconf'
+        } %>.
+    </p>
+
+    <p>
+      Chrissi, Jakob and Rudi the dog
+    </p>
+  <% end %>
+
+  <tr>
+    <td class="stack-column-center" valign="top" style="padding: 0; padding-bottom: 40px; vertical-align: top; text-align: center">
+      <a href="https://think-about.io/about-us.html">
+        <img style="margin: 10px" width="100" src="<%= current_page.url + 'chrissi.png' %>"/>
+      </a>
+      <a href="https://think-about.io/about-us.html">
+        <img style="margin: 10px" width="100" src="<%= current_page.url + 'jakob.png' %>"/>
+      </a>
+      <a href="https://think-about.io/about-us.html">
+        <img style="margin: 10px" width="100" src="<%= current_page.url + 'rudi.png' %>"/>
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="stack-column-center" valign="top" style="padding: 40px 0; vertical-align: top; text-align: center">
+      <a href="https://twitter.com/thinkaboutconf">
+        <img src="<%= current_page.url + 'twitter.png' %>"/>
+      </a>
+      <a href="https://github.com/holderbaum-io/">
+        <img src="<%= current_page.url + 'github.png' %>"/>
+      </a>
+      <a href="https://www.meetup.com/de-DE/Think-About-about-Tech-Design-and-their-impact-on-Society/">
+        <img src="<%= current_page.url + 'meetup.png' %>"/>
+      </a>
+      <a href="mailto:kontakt@think-about.io">
+        <img src="<%= current_page.url + 'mail.png' %>"/>
+      </a>
+    </td>
+  </tr>
+<% end %>
+
