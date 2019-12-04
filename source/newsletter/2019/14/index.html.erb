@@ -54,22 +54,27 @@ preheader_text: "Merry Christmas"
 <% partial 'box' do %>
   <%= partial 'head',
     locals: {
-      name: 'kim_crayton',
+      name: 'amy_lynch',
       alt: ''
     } %>
   <% partial 'title' do %>
-    Keynote: Unintended Consequences
+    Keynote: Breaking down Barriers to Inclusion
   <% end %>
   <% partial 'text' do %>
     <p>
-      Our first keynote (out of four) is decided. The amazing
+      Our second keynote (out of four) is decided: The amazing
       <%= partial 'link',
         locals: {
-          text: 'Kim Crayton',
-          link: 'https://think-about.io/events/2020/talks/unintended_consequences.html'
+          text: 'Amy Lynch',
+          link: 'https://think-about.io/events/2020/talks/barriers_to_inclusion.html'
         } %>
-      will talk about inclusive and diverse workplaces in the opening keynote
-      on the second day of the conference.
+      who works at 
+      <%= partial 'link',
+        locals: {
+          text: 'ThoughtWorks',
+          link: 'https://www.thoughtworks.com/'
+        } %>
+      will provide you with practical tips and actionable outcomes that can help to make Tech an inclusive place for everyone.
     </p>
   <% end %>
 <% end %>
