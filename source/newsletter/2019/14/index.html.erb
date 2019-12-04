@@ -36,15 +36,19 @@ preheader_text: "Merry Christmas"
 
 <% partial 'box' do %>
   <% partial 'title' do %>
-    Meet some of next year's Speakers
+    We have two Amazing New Speakers
   <% end %>
   <% partial 'text' do %>
     <p>
-      At the moment we are actively sourcing for next year's speakers. While this is an ongoing
-      process, <b>we already found nine amazing individuals</b> who will be in our
-      lineup. Here is a short introduction:
+      We have <b>eleven speakers confirmed</b> so far and more to come. Feel free to check out all of next year's speakers at our website.
     </p>
   <% end %>
+
+  <%= partial 'button',
+    locals: {
+      text: 'See All Speakers',
+      link: 'https://think-about.io/speakers.html'
+    } %>
 <% end %>
 
 <% partial 'box' do %>
