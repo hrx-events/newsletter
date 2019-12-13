@@ -115,6 +115,49 @@ preheader_text: "Merry Christmas"
 
 <%= partial 'hero',
   locals: {
+    image: 'queerjs.png',
+    alt: 'QueerJS Cologne',
+    link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/267159487/'
+  } %>
+
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    QueerJS is finally coming to Cologne
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      We worked together with
+      <%= partial 'link',
+        locals: {
+          text: 'Carolyn',
+          link: 'https://twitter.com/carolstran'
+        } %>
+      and the amazing
+      <%= partial 'link',
+        locals: {
+          text: 'QueerJS Team',
+          link: 'https://queerjs.com/organizers'
+        } %>
+      to bring QueerJS to Cologne. On Februrary 6th we will host the meetup at
+      <%= partial 'link',
+        locals: {
+          text: 'Dunckelfeld',
+          link: 'https://dunckelfeld.de/'
+        } %>
+      who will provide their amazing space, great food and cool drinks. Grab
+      your free ticket, only 50 spots on offer.
+    </p>
+  <% end %>
+  <%= partial 'button',
+    locals: {
+      text: 'Join the QueerJS Meetup',
+      link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/267159487/'
+    } %>
+<% end %>
+
+<%= partial 'hero',
+  locals: {
     image: 'aircare.png',
     alt: 'AirCare - Easily compensate for the cimate impact of your flights',
     link: 'https://get.air.care/'
@@ -161,19 +204,14 @@ preheader_text: "Merry Christmas"
 
   <% partial 'text' do %>
     <p>
-      We are going to travel through the Saxon Switzerland soon and will see you again next year. We have already planned some
-      <%= partial 'link',
-        locals: {
-          text: 'Meetups',
-          link: 'https://www.meetup.com/de-DE/Think-About-about-Tech-Design-and-their-impact-on-Society/'
-        } %>
-      for January and February so stay tuned. And don't forget to follow us on
-
+      We are going to travel through the Saxon Switzerland soon and will see
+      you again next year. And don't forget to follow us on
       <%= partial 'link',
         locals: {
           text: 'Twitter',
           link: 'https://twitter.com/thinkaboutconf'
-        } %>.
+        } %>
+      in case your not doing ot already.
     </p>
 
     <p>
