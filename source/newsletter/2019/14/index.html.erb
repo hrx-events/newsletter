@@ -113,6 +113,46 @@ preheader_text: "Merry Christmas"
   <% end %>
 <% end %>
 
+<%= partial 'hero',
+  locals: {
+    image: 'aircare.png',
+    alt: 'AirCare - Easily compensate for the cimate impact of your flights',
+    link: 'https://get.air.care/'
+  } %>
+
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    Meet AirCare - an easy way to compensate for your flights
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      A friend -
+      <%= partial 'link',
+        locals: {
+          text: 'Steven',
+          link: 'https://twitter.com/shylands'
+        } %>
+      -
+      founded this project. In case you have to fly in the near future,
+      consider taking a look at it.
+    </p>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'AirCare',
+          link: 'https://get.air.care/'
+        } %>
+       is an online tool that helps you understand the climate impact of your
+       air travel, and make up for it through carbon offsetting.
+    </p>
+    <p>
+      You can find out the climate impact of a flight by simply forwarding a
+      flight booking email to impact@air.care or via their flight entry form.
+    </p>
+  <% end %>
+<% end %>
+
 <% partial 'box' do %>
   <% partial 'title' do %>
     Merry Christmas<br> 
