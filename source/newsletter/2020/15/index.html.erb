@@ -1,0 +1,273 @@
+---
+title: "Newsletter #15"
+date: "January 2020"
+preheader_text: "Early Bird Sale ends"
+---
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    It is almost Christmas :)
+  <% end %>
+
+  <% partial 'text' do %>
+    <p>
+      2019 is almost over now and we are looking forward to three weeks of
+      Christmas vacation.
+    </p>
+    <p>
+      We continue to be overwhelmed with all the positive feedback that is
+      still reaching us. What started as an idea in our heads will go into the
+      second round in 2020. <b>Thanks for everyone who joined us on this
+      journey so far</b> – we are grateful for all the support that we get.
+    </p>
+    <p>
+      And the good news is: We still have 20 Early Bird Tickets left so you
+      might still have the chance to grab one of those.
+    </p>
+  <% end %>
+
+  <%= partial 'button',
+    locals: {
+      text: 'Get Your Ticket',
+      link: 'https://think-about.io/tickets.html'
+    } %>
+<% end %>
+
+<%= partial 'hero',
+  locals: {
+    image: 'speakers.jpg',
+    alt: 'People lining up to get into the Think About! 2019 Venue',
+    link: 'https://think-about.io/speakers.html'
+  } %>
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    We have two Amazing New Speakers
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      So far there are <b>eleven confirmed speakers</b> - wait for another 13
+      amazing anouncements next year. While waiting, check out who's who:
+    </p>
+  <% end %>
+
+  <%= partial 'button',
+    locals: {
+      text: 'See All Speakers',
+      link: 'https://think-about.io/speakers.html'
+    } %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'amy_lynch',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Keynote: Breaking down Barriers to Inclusion
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      Our second keynote (out of four) is decided: The amazing
+      <%= partial 'link',
+        locals: {
+          text: 'Amy Lynch',
+          link: 'https://think-about.io/events/2020/talks/barriers_to_inclusion.html'
+        } %>
+      from ThoughtWorks will provide you with practical tips and actionable
+      outcomes that can help to make Tech an inclusive place for everyone.
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'mirjam_baeuerlein',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Tech Talk: Treat yourself – a tale about dog training and test-driven development
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Mirjam Bäuerlein',
+          link: 'https://think-about.io/events/2020/talks/treat_yourself.html'
+        } %>
+      will talk about what you can take away from Dog Training to become better at TDD. 
+    </p>
+    <p>
+      Side note: Mirjam founded 
+    <%= partial 'link',
+        locals: {
+          text: 'Conference Buddy',
+          link: 'https://www.conferencebuddy.io/'
+        } %>
+        which is a platform for people who want to attend a tech conference but
+        do not want to go alone. We hopefully will be having conference buddies
+        at the Think About! next year again :)
+    </p>
+  <% end %>
+<% end %>
+
+<%= partial 'hero',
+  locals: {
+    image: 'queerjs.png',
+    alt: 'QueerJS Cologne',
+    link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/267159487/'
+  } %>
+
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    QueerJS is finally coming to Cologne
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      We worked together with
+      <%= partial 'link',
+        locals: {
+          text: 'Carolyn',
+          link: 'https://twitter.com/carolstran'
+        } %>
+      and the amazing
+      <%= partial 'link',
+        locals: {
+          text: 'QueerJS Team',
+          link: 'https://queerjs.com/organizers'
+        } %>
+      to bring QueerJS to Cologne. On February 6th we will host the meetup at
+      <%= partial 'link',
+        locals: {
+          text: 'Dunckelfeld',
+          link: 'https://dunckelfeld.de/'
+        } %>
+      who will provide their amazing space, great food and cool drinks. Grab
+      your free ticket, only 50 spots on offer.
+    </p>
+  <% end %>
+  <%= partial 'button',
+    locals: {
+      text: 'Join the QueerJS Meetup',
+      link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/267159487/'
+    } %>
+<% end %>
+
+<%= partial 'hero',
+  locals: {
+    image: 'aircare.png',
+    alt: 'AirCare - Easily compensate for the cimate impact of your flights',
+    link: 'https://get.air.care/'
+  } %>
+
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    Meet AirCare - an easy way to compensate for your flights
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      A friend -
+      <%= partial 'link',
+        locals: {
+          text: 'Steven',
+          link: 'https://twitter.com/shylands'
+        } %>
+      -
+      founded this project. In case you have to fly in the near future,
+      consider taking a look at it.
+    </p>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'AirCare',
+          link: 'https://get.air.care/'
+        } %>
+       is an online tool that helps you understand the climate impact of your
+       air travel, and make up for it through carbon offsetting.
+    </p>
+    <p>
+      You can find out the climate impact of a flight by simply forwarding a
+      flight booking email to impact@air.care or via their flight entry form.
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    A note regarding CleverReach
+  <% end %>
+
+  <% partial 'text' do %>
+    <p>
+      After two Newsletters with CleverReach instead of selfhosted
+      phpList/mailtrain we are quite happy with the solution. Especially now,
+      since we were able to deactivate <b>ALL</b> tracking features.
+    </p>
+    <p>
+      The consequence being that we can not see the "conversion rate" of our
+      newsletter - that is how we used our newsletters previously and that is
+      how we like it.
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    Merry Christmas<br> 
+    and a Happy New Year!
+  <% end %>
+
+  <% partial 'text' do %>
+    <p>
+      We are going to travel through the Saxon Switzerland soon and will see
+      you again next year. And don't forget to follow us on
+      <%= partial 'link',
+        locals: {
+          text: 'Twitter',
+          link: 'https://twitter.com/thinkaboutconf'
+        } %>
+      in case your not doing it already.
+    </p>
+
+    <p>
+      See you next year.<br>
+      Chrissi, Jakob and Rudi the dog
+    </p>
+  <% end %>
+
+  <tr>
+    <td class="stack-column-center" valign="top" style="padding: 0; padding-bottom: 40px; vertical-align: top; text-align: center">
+      <a href="https://think-about.io/about-us.html">
+        <img style="margin: 10px" width="100" src="<%= current_page.url + 'chrissi.png' %>"/>
+      </a>
+      <a href="https://think-about.io/about-us.html">
+        <img style="margin: 10px" width="100" src="<%= current_page.url + 'jakob.png' %>"/>
+      </a>
+      <a href="https://think-about.io/about-us.html">
+        <img style="margin: 10px" width="100" src="<%= current_page.url + 'rudi.png' %>"/>
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="stack-column-center" valign="top" style="padding: 40px 0; vertical-align: top; text-align: center">
+      <a href="https://twitter.com/thinkaboutconf">
+        <img src="<%= current_page.url + 'twitter.png' %>"/>
+      </a>
+      <a href="https://github.com/holderbaum-io/">
+        <img src="<%= current_page.url + 'github.png' %>"/>
+      </a>
+      <a href="https://www.meetup.com/de-DE/Think-About-about-Tech-Design-and-their-impact-on-Society/">
+        <img src="<%= current_page.url + 'meetup.png' %>"/>
+      </a>
+      <a href="mailto:kontakt@think-about.io">
+        <img src="<%= current_page.url + 'mail.png' %>"/>
+      </a>
+    </td>
+  </tr>
+<% end %>
+
