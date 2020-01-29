@@ -217,7 +217,7 @@ preheader_text: "Early Bird Sale ends"
     <%= partial 'link',
     locals: {
       text: 'Vaillant',
-      link: 'https://www.vaillant.de/heizung/'
+      link: 'https://www.vaillant-group.com/'
     } %>
     for trusting in us again. 
     </p>
@@ -233,12 +233,14 @@ preheader_text: "Early Bird Sale ends"
     } %>
 <% end %>
 
+<%= partial 'hero',
+  locals: {
+    image: 'avenga.jpg',
+    alt: 'Avenga logo',
+    link: 'https://www.avenga.com/'
+  } %>
+
 <% partial 'box' do %>
-  <%= partial 'head',
-    locals: {
-      name: 'avenga',
-      alt: 'Avenga logo'
-    } %>
     <% partial 'title' do %>
     Gold Sponsor:
     <%= partial 'link',
@@ -252,12 +254,14 @@ preheader_text: "Early Bird Sale ends"
   <% end %>
 <% end %>
 
+<%= partial 'hero',
+  locals: {
+    image: 'cologneintelligence.jpg',
+    alt: 'Cologne Intelligence logo',
+    link: 'https://www.cologne-intelligence.de/'
+  } %>
+
 <% partial 'box' do %>
-  <%= partial 'head',
-    locals: {
-      name: 'cologneintelligence',
-      alt: 'Cologne Intelligence logo'
-    } %>
     <% partial 'title' do %>
     Gold Sponsor:
     <%= partial 'link',
@@ -268,6 +272,27 @@ preheader_text: "Early Bird Sale ends"
   <% end %>
   <% partial 'text' do %>
     Cologne Intelligence – often simply called „CI“ – is a team of passionate, creative and innovative professionals. With locations in Frankfurt and Cologne, CI is a reliable business partner, offering consulting, tailor made software development, mobile applications, complex reporting solutions and agile coaching and training. We live flat hierarchies and value learning as part of everyday work. We’re obsessed with new product ideas, new technologies, and unconven- tional thinking.
+  <% end %>
+<% end %>
+
+<%= partial 'hero',
+  locals: {
+    image: 'vaillant.jpg',
+    alt: 'Vaillant logo',
+    link: 'https://www.vaillant-group.com/'
+  } %>
+
+<% partial 'box' do %>
+    <% partial 'title' do %>
+    Gold Sponsor:
+    <%= partial 'link',
+    locals: {
+      text: 'Vaillant',
+      link: 'https://www.vaillant-group.com/'
+    } %>
+  <% end %>
+  <% partial 'text' do %>
+    The Vaillant Group is a global market and technology leader in the fields of heating, ventilation and air-conditioning technology. For over 140 years, we have been following a strategy designed to achieve sustainable and profitable growth. Today, our family-owned company has 10 sites in six European countries and China. Our plants manufacture high-efficiency products.
   <% end %>
 <% end %>
 
