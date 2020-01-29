@@ -203,11 +203,11 @@ preheader_text: "Early Bird Sale ends"
 
 <% partial 'box' do %>
   <% partial 'title' do %>
-    Meet our first Gold and Silver Sponsors 
+    Meet our first Gold Sponsors 
   <% end %>
   <% partial 'text' do %>
     <p>
-      Making an event like the Think About! happen would not be possible without the support of our sponsors. We are extremely grateful to have found the first four Main Sponsors. Special thanks to
+      Making an event like the Think About! happen would not be possible without the support of our sponsors. We are extremely grateful to have found the first three Gold Sponsors. Special thanks to
     <%= partial 'link',
     locals: {
       text: 'Cologne Intelligence',
@@ -249,6 +249,25 @@ preheader_text: "Early Bird Sale ends"
   <% end %>
   <% partial 'text' do %>
     We are a global IT and digital transformation champion that supports our customers in realizing technology’s huge potential for a smarter and more sustainable world. We’ve united creativity and innovation with the instant impact and execution power of a large IT solution provider. Customer experience is the new battleground and Avenga is your partner to master the challenge.
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'cologneintelligence',
+      alt: 'Cologne Intelligence logo'
+    } %>
+    <% partial 'title' do %>
+    Gold Sponsor:
+    <%= partial 'link',
+    locals: {
+      text: 'Cologne Intelligence',
+      link: 'https://www.cologne-intelligence.de/'
+    } %>
+  <% end %>
+  <% partial 'text' do %>
+    Cologne Intelligence – often simply called „CI“ – is a team of passionate, creative and innovative professionals. With locations in Frankfurt and Cologne, CI is a reliable business partner, offering consulting, tailor made software development, mobile applications, complex reporting solutions and agile coaching and training. We live flat hierarchies and value learning as part of everyday work. We’re obsessed with new product ideas, new technologies, and unconven- tional thinking.
   <% end %>
 <% end %>
 
