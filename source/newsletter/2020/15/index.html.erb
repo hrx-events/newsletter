@@ -115,14 +115,13 @@ preheader_text: "Early Bird Sale ends"
     link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/267159487/'
   } %>
 
-
 <% partial 'box' do %>
   <% partial 'title' do %>
     QueerJS is coming to Cologne on February 6th
   <% end %>
   <% partial 'text' do %>
     <p>
-      As introduced in our last newsletter QueerJS will come to Cologne at       
+      As introduced in our last newsletter QueerJS will come to Cologne hosted at       
       <%= partial 'link',
         locals: {
           text: 'Dunckelfeld.',
@@ -193,6 +192,73 @@ preheader_text: "Early Bird Sale ends"
       text: 'Get Your Free Ticket',
       link: 'https://react-barcamp.de/'
     } %>
+<% end %>
+
+<%= partial 'hero',
+  locals: {
+    image: 'sponsors.jpg',
+    alt: 'People standing in front of a sponsor booth',
+    link: 'https://think-about.io/sponsors.html'
+  } %>
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    Meet our first Gold and Silver Sponsors 
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      Making an event like the Think About! happen would not be possible without the support of our sponsors. We are extremely grateful to have found the first four Main Sponsors. Special thanks to
+    <%= partial 'link',
+    locals: {
+      text: 'Cologne Intelligence',
+      link: 'https://www.cologne-intelligence.de/'
+    } %>
+    and
+    <%= partial 'link',
+    locals: {
+      text: 'Vaillant',
+      link: 'https://www.vaillant.de/heizung/'
+    } %>
+    for trusting in us again. 
+    </p>
+
+    <p>
+      If you know any company that might be a good fit or want to sponsor yourself please get in touch with us. We still have some sponsor spots left.
+  <% end %>
+
+  <%= partial 'button',
+    locals: {
+      text: 'Get in Touch',
+      link: 'mailto: kontakt@think-about.io'
+    } %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'james_spivey',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Tech Talk: Let's talk about Tech Burnout
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'James Spivey',
+          link: 'https://think-about.io/events/2020/talks/burnout.html'
+        } %>
+      who works as the Director of Engineering at       
+      <%= partial 'link',
+        locals: {
+          text: 'Shutterstock',
+          link: 'https://www.shutterstock.com/'
+        } %>
+        will invite you to an honest conversation about tech burnout, what it is, who it impacts, and how to avoid it.
+
+    </p>
+  <% end %>
 <% end %>
 
 <% partial 'box' do %>
