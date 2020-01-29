@@ -171,10 +171,29 @@ preheader_text: "Early Bird Sale ends"
 
 <%= partial 'hero',
   locals: {
-    image: 'aircare.png',
-    alt: 'AirCare - Easily compensate for the cimate impact of your flights',
-    link: 'https://get.air.care/'
+    image: 'barcamp.jpg',
+    alt: 'Header image for React Barcamp in Cologne',
+    link: 'https://react-barcamp.de/'
   } %>
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    Join the free React Barcamp in Cologne this weekend
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      We are proud to be sponsoring the React Barcamp in Cologne. It will happen this weekend and there are still some tickets available.
+    </p>
+    <p>
+      This non-profit barcamp is open for any topics and completely organized by the React community. 
+    </p>
+  <% end %>
+  <%= partial 'button',
+    locals: {
+      text: 'Get Your Free Ticket',
+      link: 'https://react-barcamp.de/'
+    } %>
+<% end %>
 
 <% partial 'box' do %>
   <% partial 'title' do %>
