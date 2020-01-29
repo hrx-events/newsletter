@@ -236,28 +236,19 @@ preheader_text: "Early Bird Sale ends"
 <% partial 'box' do %>
   <%= partial 'head',
     locals: {
-      name: 'james_spivey',
-      alt: ''
+      name: 'avenga',
+      alt: 'Avenga logo'
     } %>
-  <% partial 'title' do %>
-    Tech Talk: Let's talk about Tech Burnout
+    <% partial 'title' do %>
+    Gold Sponsor:
+    <%= partial 'link',
+    locals: {
+      text: 'Avenga',
+      link: 'https://www.avenga.com/'
+    } %>
   <% end %>
   <% partial 'text' do %>
-    <p>
-      <%= partial 'link',
-        locals: {
-          text: 'James Spivey',
-          link: 'https://think-about.io/events/2020/talks/burnout.html'
-        } %>
-      who works as the Director of Engineering at       
-      <%= partial 'link',
-        locals: {
-          text: 'Shutterstock',
-          link: 'https://www.shutterstock.com/'
-        } %>
-        will invite you to an honest conversation about tech burnout, what it is, who it impacts, and how to avoid it.
-
-    </p>
+    We are a global IT and digital transformation champion that supports our customers in realizing technology’s huge potential for a smarter and more sustainable world. We’ve united creativity and innovation with the instant impact and execution power of a large IT solution provider. Customer experience is the new battleground and Avenga is your partner to master the challenge.
   <% end %>
 <% end %>
 
