@@ -37,7 +37,7 @@ preheader_text: "Early Bird Sale ends"
 
 <% partial 'box' do %>
   <% partial 'title' do %>
-    We have confirmed two New Speakers 
+    We have confirmed two New Speakers coming all the way from the US 
   <% end %>
   <% partial 'text' do %>
     <p>
@@ -55,22 +55,27 @@ preheader_text: "Early Bird Sale ends"
 <% partial 'box' do %>
   <%= partial 'head',
     locals: {
-      name: 'amy_lynch',
+      name: 'james_spivey',
       alt: ''
     } %>
   <% partial 'title' do %>
-    Keynote: Breaking down Barriers to Inclusion
+    Tech Talk: Let's talk about Tech Burnout
   <% end %>
   <% partial 'text' do %>
     <p>
-      Our second keynote (out of four) is decided: The amazing
       <%= partial 'link',
         locals: {
-          text: 'Amy Lynch',
-          link: 'https://think-about.io/events/2020/talks/barriers_to_inclusion.html'
+          text: 'James Spivey',
+          link: 'https://think-about.io/events/2020/talks/burnout.html'
         } %>
-      from ThoughtWorks will provide you with practical tips and actionable
-      outcomes that can help to make Tech an inclusive place for everyone.
+      who works as the Director of Engineering at       
+      <%= partial 'link',
+        locals: {
+          text: 'Shutterstock',
+          link: 'https://www.shutterstock.com/'
+        } %>
+        will invite you to an honest conversation about tech burnout, what it is, who it impacts, and how to avoid it.
+
     </p>
   <% end %>
 <% end %>
