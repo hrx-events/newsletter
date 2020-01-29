@@ -103,7 +103,7 @@ preheader_text: "Early Bird Sale ends"
           text: 'Pivotal',
           link: 'https://pivotal.io/'
         } %>
-      will talk the pitfalls of companies in implementing Lean & Agile and how to overcome those. 
+      will talk about the pitfalls of companies in implementing Lean and Agile and how to overcome those. 
     </p>
   <% end %>
 <% end %>
@@ -118,35 +118,53 @@ preheader_text: "Early Bird Sale ends"
 
 <% partial 'box' do %>
   <% partial 'title' do %>
-    QueerJS is finally coming to Cologne
+    QueerJS is coming to Cologne on February 6th
   <% end %>
   <% partial 'text' do %>
     <p>
-      We worked together with
+      As introduced in our last newsletter QueerJS will come to Cologne at       
       <%= partial 'link',
         locals: {
-          text: 'Carolyn',
-          link: 'https://twitter.com/carolstran'
+          text: 'Dunckelfeld.',
+          link: 'https://dunckelfeld.de/'
         } %>
-      and the amazing
+      The amazing
       <%= partial 'link',
         locals: {
           text: 'QueerJS Team',
           link: 'https://queerjs.com/organizers'
         } %>
-      to bring QueerJS to Cologne. On February 6th we will host the meetup at
+        has worked relentlessly to find the following amazing speakers:
+      </p> 
+    <p>
       <%= partial 'link',
         locals: {
-          text: 'Dunckelfeld',
-          link: 'https://dunckelfeld.de/'
+          text: 'Nils Binder',
+          link: 'https://twitter.com/supremebeing09'
         } %>
-      who will provide their amazing space, great food and cool drinks. Grab
-      your free ticket, only 50 spots on offer.
+        will talk about combining art history and frontend development.
+      </p>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'David Bailey',
+          link: 'https://twitter.com/davidbailey00'
+        } %>
+        will give you insights on how to make accessibility important at your workplace.
+      </p>
+      <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Alejandra Villa',
+          link: 'https://twitter.com/AlxSavage'
+        } %>
+        hasn't decided on a topic yet but we are sure it will be an extremly interesting one.
+      </p>
     </p>
   <% end %>
   <%= partial 'button',
     locals: {
-      text: 'Join the QueerJS Meetup',
+      text: 'Join the free Meetup',
       link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/267159487/'
     } %>
 <% end %>
