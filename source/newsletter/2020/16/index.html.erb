@@ -61,26 +61,27 @@ preheader_text: "Think About! Early Bird tickets are sold out"
 <% partial 'box' do %>
   <%= partial 'head',
     locals: {
-      name: 'james_spivey',
+      name: 'michael_feathers',
       alt: ''
     } %>
   <% partial 'title' do %>
-    Tech Talk: Let's talk about Tech Burnout
+    Technical Keynote by Michael Feathers
   <% end %>
   <% partial 'text' do %>
     <p>
+      We are greatly enthusiastic that the experienced tech expert
       <%= partial 'link',
         locals: {
-          text: 'James Spivey',
-          link: 'https://think-about.io/events/2020/talks/burnout.html'
+          text: 'Michael Feathers',
+          link: 'https://think-about.io/events/2020/talks/tbd.html'
         } %>
-      is Director of Engineering at
+      who is the author of the book
       <%= partial 'link',
         locals: {
-          text: 'Shutterstock',
-          link: 'https://www.shutterstock.com/'
+          text: 'Working Effectively with Legacy Code',
+          link: 'https://www.goodreads.com/book/show/44919.Working_Effectively_with_Legacy_Code'
         } %>
-      . He will invite you to an honest conversation about tech burnout, what it is, who it impacts, and how to avoid it.
+      will give the technical keynote of this year's conference. The content of his keynote is still a surprise so stay stuned for updates.
 
     </p>
   <% end %>
