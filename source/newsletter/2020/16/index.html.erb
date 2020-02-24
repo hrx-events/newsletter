@@ -190,6 +190,41 @@ preheader_text: "Think About! Early Bird tickets are sold out"
     </p>
   <% end %>
 <% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'jeremy_keith',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Tech Talk: The Layers Of The Web
+  <% end %>
+  <% partial 'text' do %>
+    <p> 
+      Say hello to
+      <%= partial 'link',
+        locals: {
+          text: 'Jeremy Keith',
+          link: 'https://think-about.io/events/2020/talks/layers_of_the_web.html'
+        } %>
+        the founder of 
+      <%= partial 'link',
+        locals: {
+          text: 'Clearleft',
+          link: 'https://clearleft.com/'
+        } %>
+        and the author of 
+      <%= partial 'link',
+        locals: {
+          text: 'Going Offline',
+          link: 'https://abookapart.com/products/going-offline'
+        } %>
+        who will uncover how to build resilient, performant, accessible and beautiful web creations.
+    </p>
+  <% end %>
+<% end %>
+
 <%= partial 'hero',
   locals: {
     image: 'queerjs.png',
