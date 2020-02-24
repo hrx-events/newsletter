@@ -225,6 +225,33 @@ preheader_text: "Think About! Early Bird tickets are sold out"
   <% end %>
 <% end %>
 
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'dino_frese',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Tech Talk: Distributed Teams - FF through 20 years of out- & in-sourcing
+  <% end %>
+  <% partial 'text' do %>
+    <p> 
+      <%= partial 'link',
+        locals: {
+          text: 'Dino Frese',
+          link: 'https://think-about.io/events/2020/talks/distributed_teams.html'
+        } %>
+        who is Managing Director of
+      <%= partial 'link',
+        locals: {
+          text: 'Accenture Interactive',
+          link: 'https://www.accenture.com/de-de/services/interactive-index'
+        } %>
+        will give insights on his 20 years of experience working with distributed software teams.
+    </p>
+  <% end %>
+<% end %>
+
 <%= partial 'hero',
   locals: {
     image: 'queerjs.png',
