@@ -115,6 +115,28 @@ preheader_text: "Think About! Early Bird tickets are sold out"
   <% end %>
 <% end %>
 
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'sebastian_greger',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Design Talk: Mainstreaming Data Minimalism
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      Berlin-based sociologist and interaction designer 
+      <%= partial 'link',
+        locals: {
+          text: 'Sebastian Greger',
+          link: 'https://think-about.io/events/2020/talks/mainstreaming_data_minimalism.html'
+        } %>
+        will explain how designing for privacy is about much more than just reducing data
+    </p>
+  <% end %>
+<% end %>
+
 <%= partial 'hero',
   locals: {
     image: 'queerjs.png',
