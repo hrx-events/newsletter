@@ -254,55 +254,36 @@ preheader_text: "Think About! Early Bird tickets are sold out"
 
 <%= partial 'hero',
   locals: {
-    image: 'queerjs.png',
-    alt: 'QueerJS Cologne',
-    link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/267159487/'
+    image: 'meetup_marcel.png',
+    alt: 'Header Image for Meetup',
+    link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/268237844/'
   } %>
 
 <% partial 'box' do %>
   <% partial 'title' do %>
-    QueerJS is coming to Cologne on February 6th
+    Join our next Meetup this Thursday, 27th February
   <% end %>
   <% partial 'text' do %>
     <p>
-      As introduced in our last newsletter QueerJS will come to Cologne hosted by our friends at
-      <%= partial 'link',
-        locals: {
-          text: 'Dunckelfeld.',
-          link: 'https://dunckelfeld.de/'
-        } %>
-      The amazing
-      <%= partial 'link',
-        locals: {
-          text: 'QueerJS Team',
-          link: 'https://queerjs.com/organizers'
-        } %>
-        has worked relentlessly to find the following amazing speakers:
-      </p> 
+      We have another meetup coming up this week: 
+    </p>
     <p>
+      Coach and Software Developer 
       <%= partial 'link',
         locals: {
-          text: 'Nils Binder',
-          link: 'https://twitter.com/supremebeing09'
+          text: 'Marcel Koch',
+          link: 'https://www.marcelkoch.net/'
         } %>
-        will talk about combining art history and frontend development.
-      </p>
+      will talk about the pitfalls of bad communication in (software) team and show you techniques how to overcome those. 
+    </p>
     <p>
+      This meetup is hosted by our friends at
       <%= partial 'link',
         locals: {
-          text: 'David Bailey',
-          link: 'https://twitter.com/davidbailey00'
+          text: 'Inovex',
+          link: 'https://www.inovex.de/en/'
         } %>
-        will give you insights on how to make accessibility important at your workplace.
-      </p>
-      <p>
-      <%= partial 'link',
-        locals: {
-          text: 'Alejandra Villa',
-          link: 'https://twitter.com/AlxSavage'
-        } %>
-        hasn't decided on a topic yet but we are sure it will be an extremly interesting one.
-      </p>
+        who will provide an impressive meetup location in Cologne Mühlheim and offer delicious and healthy food. We can't wait for this event to happen. 
     </p>
   <% end %>
   <%= partial 'button',
