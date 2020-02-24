@@ -164,6 +164,32 @@ preheader_text: "Think About! Early Bird tickets are sold out"
   <% end %>
 <% end %>
 
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'christine_weinmeister',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Society Talk: Sichtbare Wirkung gegen unsichtbare Barrieren
+  <% end %>
+  <% partial 'text' do %>
+    <p> 
+      <%= partial 'link',
+        locals: {
+          text: 'Christine Weinmeister',
+          link: 'https://think-about.io/events/2020/talks/sichtbare_wirkung.html'
+        } %>
+        who is the Head of Development Online at
+      <%= partial 'link',
+        locals: {
+          text: 'Manimundo',
+          link: 'https://www.manimundo.de'
+        } %>
+        will talk about how her company supports creating more inclusive communication between individuals by offering sign language courses online.
+    </p>
+  <% end %>
+<% end %>
 <%= partial 'hero',
   locals: {
     image: 'queerjs.png',
