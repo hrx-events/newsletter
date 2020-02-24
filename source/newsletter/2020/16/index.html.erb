@@ -334,34 +334,27 @@ preheader_text: "Think About! Early Bird tickets are sold out"
 
 <% partial 'box' do %>
   <% partial 'title' do %>
-    Meet our first Gold Sponsors 
+    Meet our next Sponsors 
   <% end %>
   <% partial 'text' do %>
     <p>
-      Making an event like the Think About! happen would not be possible without the support of our sponsors. We are extremely grateful to have found the first three Gold Sponsors. Special thanks to
+      Making an event like the Think About! happen would not be possible without the support of our sponsors. Thanks to 
     <%= partial 'link',
     locals: {
-      text: 'Cologne Intelligence',
-      link: 'https://www.cologne-intelligence.de/'
+      text: 'Metro Markets',
+      link: 'https://www.metro-markets.de/'
     } %>
-    and
-    <%= partial 'link',
-    locals: {
-      text: 'Vaillant',
-      link: 'https://www.vaillant-group.com/'
-    } %>
-    for trusting in us again.
-    And a warm welcome to
-    <%= partial 'link',
-    locals: {
-      text: 'Avenga',
-      link: 'https://www.avenga.com/'
-    } %>
-    who are sponsoring us for the first time.
+      who just joined as our fourth <b>Gold Sponsor</b>. 
     </p>
-
+      And as our first <b>Silver Sponsor</b> we are excited to introduce 
+    <%= partial 'link',
+    locals: {
+      text: 'Neuland',
+      link: 'https://neuland-bfi.de/'
+    } %>
+      coming all the way from Bremen to support us. Thank you so much!
     <p>
-      If you know any company that might be a good fit or want to sponsor yourself please get in touch with us. We still have some sponsor spots left.
+      If you know any company that might be a good fit or want to sponsor yourself please get in touch with us. We have a few sponsor spots left.
   <% end %>
 
   <%= partial 'button',
