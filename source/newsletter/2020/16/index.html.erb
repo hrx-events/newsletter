@@ -6,24 +6,30 @@ preheader_text: "Think About! Early Bird tickets are sold out"
 
 <% partial 'box' do %>
   <% partial 'title' do %>
-    Our Early Bird Sale ends soon!
+    Our Early Bird Tickets are sold out!
   <% end %>
 
   <% partial 'text' do %>
     <p>
-      This is our first newsletter in 2020. We wish you a happy and healthy new year. After three weeks of Christmas vacation we have been quite busy: so be prepared for some amazing updates.
+      We are so excited – <b>we sold all of our early bird tickets</b>. Thanks to everyone who already bought a ticket 💖💖💖
     </p>
     <p>
-      <b>Our early bird sale ends on February 14th and we have only 10 early bird tickets left</b> – so you might want to hurry.
+      And for those who weren't fast enough: Don't worry! We have plenty of regular tickets on sale. And in case you should not be able to afford a ticket we also have some 
+      <%= partial 'link',
+        locals: {
+          text: 'solidarity tickets',
+          link: 'https://think-about.io/tickets.html#solidarity'
+        } %>
+       left.   
     </p>
     <p>
-      Thanks to everyone who already bought a ticket and for the trust that you put in us. We highly appreciate your support. 💗💗💗💗
+
     </p>
   <% end %>
 
   <%= partial 'button',
     locals: {
-      text: 'Get Your Ticket Now',
+      text: 'Grab Your Ticket',
       link: 'https://think-about.io/tickets.html'
     } %>
 <% end %>
