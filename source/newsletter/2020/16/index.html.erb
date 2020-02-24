@@ -295,28 +295,34 @@ preheader_text: "Think About! Early Bird tickets are sold out"
 
 <%= partial 'hero',
   locals: {
-    image: 'barcamp.jpg',
-    alt: 'Header image for React Barcamp in Cologne',
-    link: 'https://react-barcamp.de/'
+    image: 'queerjs.jpg',
+    alt: 'Two pictures taken at the QueerJS Meetup showing a talk and stickers',
+    link: 'https://queerjs.com/'
   } %>
 
 <% partial 'box' do %>
   <% partial 'title' do %>
-    Join the free React Barcamp in Cologne this weekend
+    The QueerJS Cologne celebrated it's wonderful first edition
   <% end %>
   <% partial 'text' do %>
     <p>
-      We are proud to be sponsoring the React Barcamp in Cologne. It will happen this weekend and there are still some tickets available.
+      We supported the first edition of the QueerJS meetup in Cologne (ever!) and it was an inspiring evening with three interesting talks and an amazing community. Thanks again to the
+      <%= partial 'link',
+        locals: {
+          text: 'organizers',
+          link: 'https://queerjs.com/organizers'
+        } %>
+       and to our friends at 
+      <%= partial 'link',
+        locals: {
+          text: 'Dunckelfeld',
+          link: 'https://www.dunckelfeld.de/en/'
+        } %>
+       who provided self-made food and the beautiful location.
     </p>
-    <p>
-      This non-profit barcamp is open for any topics and organized by the React community.
+      And we have good news: There will be a second edition coming up soon – possibly as a warming-up event right before the Think About! conference. We will keep you posted.
     </p>
   <% end %>
-  <%= partial 'button',
-    locals: {
-      text: 'Get Your Free Ticket',
-      link: 'https://react-barcamp.de/'
-    } %>
 <% end %>
 
 <%= partial 'hero',
