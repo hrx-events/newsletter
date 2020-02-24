@@ -403,27 +403,6 @@ preheader_text: "Think About! Early Bird tickets are sold out"
   <% end %>
 <% end %>
 
-<%= partial 'hero',
-  locals: {
-    image: 'vaillant.jpg',
-    alt: 'Vaillant logo',
-    link: 'https://www.vaillant-group.com/'
-  } %>
-
-<% partial 'box' do %>
-    <% partial 'title' do %>
-    Gold Sponsor:
-    <%= partial 'link',
-    locals: {
-      text: 'Vaillant',
-      link: 'https://www.vaillant-group.com/'
-    } %>
-  <% end %>
-  <% partial 'text' do %>
-    The Vaillant Group is a global market and technology leader in the fields of heating, ventilation and air-conditioning technology. For over 140 years, we have been following a strategy designed to achieve sustainable and profitable growth. Today, our family-owned company has 10 sites in six European countries and China. Our plants manufacture high-efficiency products.
-  <% end %>
-<% end %>
-
 <% partial 'box' do %>
   <% partial 'title' do %>
     See you in February!
