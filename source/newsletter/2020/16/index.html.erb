@@ -1,0 +1,359 @@
+---
+title: "Newsletter #16"
+date: "February 2020"
+preheader_text: "Think About! Early Bird tickets are sold out"
+---
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    Our Early Bird Sale ends soon!
+  <% end %>
+
+  <% partial 'text' do %>
+    <p>
+      This is our first newsletter in 2020. We wish you a happy and healthy new year. After three weeks of Christmas vacation we have been quite busy: so be prepared for some amazing updates.
+    </p>
+    <p>
+      <b>Our early bird sale ends on February 14th and we have only 10 early bird tickets left</b> – so you might want to hurry.
+    </p>
+    <p>
+      Thanks to everyone who already bought a ticket and for the trust that you put in us. We highly appreciate your support. 💗💗💗💗
+    </p>
+  <% end %>
+
+  <%= partial 'button',
+    locals: {
+      text: 'Get Your Ticket Now',
+      link: 'https://think-about.io/tickets.html'
+    } %>
+<% end %>
+
+<%= partial 'hero',
+  locals: {
+    image: 'speakers.jpg',
+    alt: 'People lining up to get into the Think About! 2019 Venue',
+    link: 'https://think-about.io/speakers.html'
+  } %>
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    We have two New Speakers coming all the way from the US 
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      So far we could win over <b>13 amazing speakers</b> from all around the world. Over the next few weeks we will announce the last 11 ones. If you want to know who's who, check out our speaker's page.
+    </p>
+  <% end %>
+
+  <%= partial 'button',
+    locals: {
+      text: 'See All Speakers',
+      link: 'https://think-about.io/speakers.html'
+    } %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'james_spivey',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Tech Talk: Let's talk about Tech Burnout
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'James Spivey',
+          link: 'https://think-about.io/events/2020/talks/burnout.html'
+        } %>
+      is Director of Engineering at
+      <%= partial 'link',
+        locals: {
+          text: 'Shutterstock',
+          link: 'https://www.shutterstock.com/'
+        } %>
+      . He will invite you to an honest conversation about tech burnout, what it is, who it impacts, and how to avoid it.
+
+    </p>
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'gabrielle_bufrem',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Design Talk: Transform me, but Please Don’t Change Anything
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      Having the longest journey from San Francisco
+      <%= partial 'link',
+        locals: {
+          text: 'Gabrielle Bufrem',
+          link: 'https://think-about.io/events/2020/talks/transform_me.html'
+        } %>
+        who is the Manager of Product Management at
+      <%= partial 'link',
+        locals: {
+          text: 'Pivotal',
+          link: 'https://pivotal.io/'
+        } %>
+      will talk about the pitfalls of companies in implementing Lean and Agile and how to overcome those. 
+    </p>
+  <% end %>
+<% end %>
+
+<%= partial 'hero',
+  locals: {
+    image: 'queerjs.png',
+    alt: 'QueerJS Cologne',
+    link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/267159487/'
+  } %>
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    QueerJS is coming to Cologne on February 6th
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      As introduced in our last newsletter QueerJS will come to Cologne hosted by our friends at
+      <%= partial 'link',
+        locals: {
+          text: 'Dunckelfeld.',
+          link: 'https://dunckelfeld.de/'
+        } %>
+      The amazing
+      <%= partial 'link',
+        locals: {
+          text: 'QueerJS Team',
+          link: 'https://queerjs.com/organizers'
+        } %>
+        has worked relentlessly to find the following amazing speakers:
+      </p> 
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Nils Binder',
+          link: 'https://twitter.com/supremebeing09'
+        } %>
+        will talk about combining art history and frontend development.
+      </p>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'David Bailey',
+          link: 'https://twitter.com/davidbailey00'
+        } %>
+        will give you insights on how to make accessibility important at your workplace.
+      </p>
+      <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Alejandra Villa',
+          link: 'https://twitter.com/AlxSavage'
+        } %>
+        hasn't decided on a topic yet but we are sure it will be an extremly interesting one.
+      </p>
+    </p>
+  <% end %>
+  <%= partial 'button',
+    locals: {
+      text: 'Join the Meetup - it\'s free',
+      link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/267159487/'
+    } %>
+<% end %>
+
+<%= partial 'hero',
+  locals: {
+    image: 'barcamp.jpg',
+    alt: 'Header image for React Barcamp in Cologne',
+    link: 'https://react-barcamp.de/'
+  } %>
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    Join the free React Barcamp in Cologne this weekend
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      We are proud to be sponsoring the React Barcamp in Cologne. It will happen this weekend and there are still some tickets available.
+    </p>
+    <p>
+      This non-profit barcamp is open for any topics and organized by the React community.
+    </p>
+  <% end %>
+  <%= partial 'button',
+    locals: {
+      text: 'Get Your Free Ticket',
+      link: 'https://react-barcamp.de/'
+    } %>
+<% end %>
+
+<%= partial 'hero',
+  locals: {
+    image: 'sponsors.jpg',
+    alt: 'People standing in front of a sponsor booth',
+    link: 'https://think-about.io/sponsors.html'
+  } %>
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    Meet our first Gold Sponsors 
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+      Making an event like the Think About! happen would not be possible without the support of our sponsors. We are extremely grateful to have found the first three Gold Sponsors. Special thanks to
+    <%= partial 'link',
+    locals: {
+      text: 'Cologne Intelligence',
+      link: 'https://www.cologne-intelligence.de/'
+    } %>
+    and
+    <%= partial 'link',
+    locals: {
+      text: 'Vaillant',
+      link: 'https://www.vaillant-group.com/'
+    } %>
+    for trusting in us again.
+    And a warm welcome to
+    <%= partial 'link',
+    locals: {
+      text: 'Avenga',
+      link: 'https://www.avenga.com/'
+    } %>
+    who are sponsoring us for the first time.
+    </p>
+
+    <p>
+      If you know any company that might be a good fit or want to sponsor yourself please get in touch with us. We still have some sponsor spots left.
+  <% end %>
+
+  <%= partial 'button',
+    locals: {
+      text: 'Get in Touch',
+      link: 'mailto: kontakt@think-about.io'
+    } %>
+<% end %>
+
+<%= partial 'hero',
+  locals: {
+    image: 'avenga.jpg',
+    alt: 'Avenga logo',
+    link: 'https://www.avenga.com/'
+  } %>
+
+<% partial 'box' do %>
+    <% partial 'title' do %>
+    Gold Sponsor:
+    <%= partial 'link',
+    locals: {
+      text: 'Avenga',
+      link: 'https://www.avenga.com/'
+    } %>
+  <% end %>
+  <% partial 'text' do %>
+    We are a global IT and digital transformation champion that supports our customers in realizing technology’s huge potential for a smarter and more sustainable world. With our mission to shake up the conventional IT market, we consult, design, engineer and deliver real-world reliable solutions. We are more than 2500 professionals based in Europe, the USA, and Asia. Our German offices are located in Cologne and Berlin. Customer experience is the new battleground and Avenga is your partner to master the challenge.
+  <% end %>
+<% end %>
+
+<%= partial 'hero',
+  locals: {
+    image: 'cologneintelligence.jpg',
+    alt: 'Cologne Intelligence logo',
+    link: 'https://www.cologne-intelligence.de/'
+  } %>
+
+<% partial 'box' do %>
+    <% partial 'title' do %>
+    Gold Sponsor:
+    <%= partial 'link',
+    locals: {
+      text: 'Cologne Intelligence',
+      link: 'https://www.cologne-intelligence.de/'
+    } %>
+  <% end %>
+  <% partial 'text' do %>
+    Cologne Intelligence – often simply called „CI“ – is a team of passionate, creative and innovative professionals. With locations in Frankfurt and Cologne, CI is a reliable business partner, offering consulting, tailor made software development, mobile applications, complex reporting solutions and agile coaching and training. We live flat hierarchies and value learning as part of everyday work. We’re obsessed with new product ideas, new technologies, and unconven- tional thinking.
+  <% end %>
+<% end %>
+
+<%= partial 'hero',
+  locals: {
+    image: 'vaillant.jpg',
+    alt: 'Vaillant logo',
+    link: 'https://www.vaillant-group.com/'
+  } %>
+
+<% partial 'box' do %>
+    <% partial 'title' do %>
+    Gold Sponsor:
+    <%= partial 'link',
+    locals: {
+      text: 'Vaillant',
+      link: 'https://www.vaillant-group.com/'
+    } %>
+  <% end %>
+  <% partial 'text' do %>
+    The Vaillant Group is a global market and technology leader in the fields of heating, ventilation and air-conditioning technology. For over 140 years, we have been following a strategy designed to achieve sustainable and profitable growth. Today, our family-owned company has 10 sites in six European countries and China. Our plants manufacture high-efficiency products.
+  <% end %>
+<% end %>
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    See you in February!
+  <% end %>
+
+  <% partial 'text' do %>
+    <p>
+      Thanks for your attention and see you next month. And don't forget to follow us on
+      <%= partial 'link',
+        locals: {
+          text: 'Twitter',
+          link: 'https://twitter.com/thinkaboutconf'
+        } %>
+      in case your not doing it already.
+    </p>
+
+    <p>
+      See you next year.<br>
+      Chrissi, Jakob and Rudi the dog
+    </p>
+  <% end %>
+
+  <tr>
+    <td class="stack-column-center" valign="top" style="padding: 0; padding-bottom: 40px; vertical-align: top; text-align: center">
+      <a href="https://think-about.io/about-us.html">
+        <img style="margin: 10px" width="100" src="<%= current_page.url + 'chrissi.png' %>"/>
+      </a>
+      <a href="https://think-about.io/about-us.html">
+        <img style="margin: 10px" width="100" src="<%= current_page.url + 'jakob.png' %>"/>
+      </a>
+      <a href="https://think-about.io/about-us.html">
+        <img style="margin: 10px" width="100" src="<%= current_page.url + 'rudi.png' %>"/>
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="stack-column-center" valign="top" style="padding: 40px 0; vertical-align: top; text-align: center">
+      <a href="https://twitter.com/thinkaboutconf">
+        <img src="<%= current_page.url + 'twitter.png' %>"/>
+      </a>
+      <a href="https://github.com/holderbaum-io/">
+        <img src="<%= current_page.url + 'github.png' %>"/>
+      </a>
+      <a href="https://www.meetup.com/de-DE/Think-About-about-Tech-Design-and-their-impact-on-Society/">
+        <img src="<%= current_page.url + 'meetup.png' %>"/>
+      </a>
+      <a href="mailto:kontakt@think-about.io">
+        <img src="<%= current_page.url + 'mail.png' %>"/>
+      </a>
+    </td>
+  </tr>
+<% end %>
+
