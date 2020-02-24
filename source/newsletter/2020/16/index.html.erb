@@ -137,6 +137,33 @@ preheader_text: "Think About! Early Bird tickets are sold out"
   <% end %>
 <% end %>
 
+<% partial 'box' do %>
+  <%= partial 'head',
+    locals: {
+      name: 'alice_thwaite',
+      alt: ''
+    } %>
+  <% partial 'title' do %>
+    Society Talk: Truth and Technology
+  <% end %>
+  <% partial 'text' do %>
+    <p> 
+      <%= partial 'link',
+        locals: {
+          text: 'Alice Thwaite',
+          link: 'https://think-about.io/events/2020/talks/truth_and_technology.html'
+        } %>
+        who is a technology ethicist who specialises in improving democratic information environments and who has founded 
+      <%= partial 'link',
+        locals: {
+          text: 'The Echo Chamber Club',
+          link: 'https://www.echochamber.club/'
+        } %>
+        will talk about Truth and Technology.
+    </p>
+  <% end %>
+<% end %>
+
 <%= partial 'hero',
   locals: {
     image: 'queerjs.png',
