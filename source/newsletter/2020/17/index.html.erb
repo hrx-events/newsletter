@@ -72,38 +72,6 @@ preheader_text: "Think About! 2020 Canceled"
     } %>
 <% end %>
 
-<%= partial 'hero',
-  locals: {
-    image: 'queerjs.jpg',
-    alt: 'Two pictures taken at the QueerJS Meetup showing a talk and stickers',
-    link: 'https://queerjs.com/'
-  } %>
-
-<% partial 'box' do %>
-  <% partial 'title' do %>
-    The QueerJS Cologne celebrated it's wonderful first edition
-  <% end %>
-  <% partial 'text' do %>
-    <p>
-      We supported the first edition of the QueerJS meetup in Cologne (ever!) and it was an inspiring evening with three interesting talks and an amazing community. Thanks again to the
-      <%= partial 'link',
-        locals: {
-          text: 'organizers',
-          link: 'https://queerjs.com/organizers'
-        } %>
-       and to our friends at 
-      <%= partial 'link',
-        locals: {
-          text: 'Dunckelfeld',
-          link: 'https://www.dunckelfeld.de/en/'
-        } %>
-       who provided self-made food and the beautiful location.
-    </p>
-      And we have good news: There will be a second edition coming up soon – possibly as a warming-up event right before the Think About! conference. We will keep you posted.
-    </p>
-  <% end %>
-<% end %>
-
 <% partial 'box' do %>
   <% partial 'title' do %>
     See you soon
