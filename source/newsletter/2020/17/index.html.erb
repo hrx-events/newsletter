@@ -33,42 +33,26 @@ preheader_text: "Think About! 2020 Canceled"
 
 <%= partial 'hero',
   locals: {
-    image: 'meetup_marcel.png',
+    image: 'monsters.png',
     alt: 'Header Image for Meetup',
     link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/268237844/'
   } %>
 
 <% partial 'box' do %>
   <% partial 'title' do %>
-    Join our next Meetup this Thursday, 27th February
+    The good news are: Think About! will be back in 2021 and we are planning to continue with awesome meetups
   <% end %>
   <% partial 'text' do %>
     <p>
-      We have another meetup coming up this week: 
+      We're staying positive and are going to use the cancelation of the Think About! 2020 as an opportunity to come up with some new ideas and fresh perspective for the 2021 edition.
     </p>
-    <p>
-      Coach and Software Developer 
-      <%= partial 'link',
-        locals: {
-          text: 'Marcel Koch',
-          link: 'https://www.marcelkoch.net/'
-        } %>
-      will talk about the pitfalls of bad communication in (software) team and show you techniques how to overcome those. 
-    </p>
-    <p>
-      This meetup is hosted by our friends at
-      <%= partial 'link',
-        locals: {
-          text: 'Inovex',
-          link: 'https://www.inovex.de/en/'
-        } %>
-        who will provide an impressive meetup location in Cologne Mühlheim and offer delicious and healthy food. We can't wait for this event to happen. 
+      For those who can't wait that long: We will continue our monthly meetup series in Cologne and might also include some of this year's conference speakers – so stay tuned.
     </p>
   <% end %>
   <%= partial 'button',
     locals: {
-      text: 'Join the Meetup - it\'s free',
-      link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/268237844/'
+      text: 'Join Our Meetup Group',
+      link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society'
     } %>
 <% end %>
 
