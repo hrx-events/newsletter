@@ -17,13 +17,13 @@ preheader_text: "The Think About! conference would have started today"
       That is why we felt the need to connect with all of you today 💖 and take the opportunity to relive the Think About! 2019 edition. In this newsletter we have put together different sources for you to enjoy last year's event content again. 
     </p>
     <p>
-      And we also have some good news to share: We are still planning to come back with the Think About! conference in 2021. At the moment we are working on a research project which we will share within the next few weeks. So stay tuned :)
+      And we also have some good news to share: We are still planning to come back with the Think About! conference in 2021. At the moment we are working on a research project which we will share with you within the next few weeks. So stay tuned :)
     </p>
   <% end %>
 
   <%= partial 'button',
     locals: {
-      text: '2019 Event Page',
+      text: 'Go to Event Page',
       link: 'https://think-about.io/events/2019.html'
     } %>
 <% end %>
@@ -37,7 +37,7 @@ preheader_text: "The Think About! conference would have started today"
 
 <% partial 'box' do %>
   <% partial 'title' do %>
-    Watch last year's talk recordings
+    Watch last year's Talk Recordings
   <% end %>
   <% partial 'text' do %>
     <p>
@@ -60,10 +60,79 @@ preheader_text: "The Think About! conference would have started today"
 
   <%= partial 'button',
     locals: {
-      text: 'Watch all recordings',
+      text: 'Watch Recordings',
       link: 'https://vimeo.com/thinkaboutconf'
     } %>
 <% end %>
+
+<%= partial 'hero',
+  locals: {
+    image: 'podcast.jpg',
+    alt: 'Three people sitting together recording a podcast',
+    link: 'https://workingdraft.de/'
+  } %>
+
+<% partial 'box' do %>
+  <% partial 'title' do %>
+    Listen to Podcast Series produced by Working Draft
+  <% end %>
+  <% partial 'text' do %>
+    <p>
+    Our good friends at
+     <%= partial 'link',
+        locals: {
+          text: 'Working Draft,',
+          link: 'https://workingdraft.de/'
+        } %>
+    a German news-podcast for webdesigner and webdeveloper, attended last year's Think About! conference and interviewed six of the speakers.
+    </p>
+        <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Podcast with Laura Kalbag & Aral Balkan',
+          link: 'https://workingdraft.de/on-tour-thinkabout19-laura-kalbag-aral-balkan/'
+        } %>
+    about Small Tech
+    </p>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Podcast with Anika Zeidler',
+          link: 'https://workingdraft.de/on-tour-thinkabout19-anika-zeidler/'
+        } %>
+    about Algorithmic Bias
+    </p>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Podcast with Maren Heltsche',
+          link: 'https://workingdraft.de/on-tour-thinkabout19-maren-heltsche/'
+        } %>
+    about the Hack Society
+    </p>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Podcast with Christopher Grebs',
+          link: 'https://workingdraft.de/on-tour-thinkabout19-christopher-grebs/'
+        } %>
+    about Maintaining Ancient Projects
+    </p>
+    <p>
+      <%= partial 'link',
+        locals: {
+          text: 'Podcast with Katharina Bähr',
+          link: 'https://workingdraft.de/on-tour-thinkabout19-katharina-baehr/'
+        } %>
+    about the Power of Web Components
+    </p>
+
+
+  <% end %>
+<% end %>
+
+
+
 
 <% partial 'box' do %>
   <%= partial 'head',
