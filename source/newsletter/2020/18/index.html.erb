@@ -31,24 +31,37 @@ preheader_text: "The Think About! conference would have started today"
 <%= partial 'hero',
   locals: {
     image: 'speakers.jpg',
-    alt: 'People lining up to get into the Think About! 2019 Venue',
-    link: 'https://think-about.io/speakers.html'
+    alt: 'Person giving talk at main stage',
+    link: 'https://vimeo.com/thinkaboutconf'
   } %>
 
 <% partial 'box' do %>
   <% partial 'title' do %>
-    We have extremely exciting Speaker Updates
+    Watch last year's talk recordings
   <% end %>
   <% partial 'text' do %>
     <p>
-      At this point we have <b>20 speakers</b> confirmed – so our line-up is almost complete. We are super excited to have won over such a diverse crowd of talented speakers from all over the world. The last four talks will be announced in one of our next newsletters.
+    At the first Think About! Conference 170 people came together to watch amazing speakers such as 
+     <%= partial 'link',
+        locals: {
+          text: 'Linda Rising,',
+          link: 'https://lindarising.org/'
+        } %>
+     <%= partial 'link',
+        locals: {
+          text: 'Aral Balkan & Laura Kalbag',
+          link: 'https://ind.ie/'
+        } %>
+    and many many more.
+    </p>   
+    Luckily we were able to record all of the <b>24 talks</b> professionally. Most of the content is still valid to this day. So feel free to watch them, share them with the world or just get inspired by them.
     </p>
   <% end %>
 
   <%= partial 'button',
     locals: {
-      text: 'See All Speakers',
-      link: 'https://think-about.io/speakers.html'
+      text: 'Watch all recordings',
+      link: 'https://vimeo.com/thinkaboutconf'
     } %>
 <% end %>
 
