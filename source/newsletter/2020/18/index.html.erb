@@ -74,7 +74,7 @@ preheader_text: "The Think About! conference would have started today"
 
 <% partial 'box' do %>
   <% partial 'title' do %>
-    Listen to Podcast Series produced by Working Draft
+    Listen to a Podcast Series produced by Working Draft
   <% end %>
   <% partial 'text' do %>
     <p>
@@ -84,7 +84,7 @@ preheader_text: "The Think About! conference would have started today"
           text: 'Working Draft,',
           link: 'https://workingdraft.de/'
         } %>
-    a German news-podcast for webdesigner and webdeveloper, attended last year's Think About! conference and interviewed six of the speakers.
+    a German news-podcast for webdesigner and webdeveloper, attended last year's Think About! conference and interviewed six of the speakers:
     </p>
         <p>
       <%= partial 'link',
@@ -131,108 +131,54 @@ preheader_text: "The Think About! conference would have started today"
 
 <%= partial 'hero',
   locals: {
-    image: 'meetup_marcel.png',
-    alt: 'Header Image for Meetup',
-    link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/268237844/'
+    image: 'outdoor.jpg',
+    alt: 'A lot of people sitting in an outdoor area enjoying food and the sun',
+    link: 'https://think-about.io/events/2019.html'
   } %>
 
 <% partial 'box' do %>
   <% partial 'title' do %>
-    Join our next Meetup this Thursday, 27th February
+    Read about our Attendees Experiences
   <% end %>
   <% partial 'text' do %>
     <p>
-      We have another meetup coming up this week: 
+      We are extremely happy that some of our last year's attendees summarized the experiences they had at the Think About! 2019. <b>Thanks again for sharing your thoughts and perspectives</b> 💖
     </p>
     <p>
-      Coach and Software Developer 
-      <%= partial 'link',
-        locals: {
-          text: 'Marcel Koch',
-          link: 'https://www.marcelkoch.net/'
-        } %>
-      will talk about the pitfalls of bad communication in (software) teams and techniques how to overcome those.
-    </p>
-    <p>
-      This meetup is hosted by our friends at
-      <%= partial 'link',
-        locals: {
-          text: 'Inovex',
-          link: 'https://www.inovex.de/en/'
-        } %>
-        who will provide an impressive meetup location in Cologne Mühlheim and offer delicious and healthy food. We can't wait for this event to happen. 
-    </p>
-  <% end %>
-  <%= partial 'button',
-    locals: {
-      text: 'Join the Meetup - it\'s free',
-      link: 'https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/268237844/'
-    } %>
-<% end %>
-
-<%= partial 'hero',
-  locals: {
-    image: 'queerjs.jpg',
-    alt: 'Two pictures taken at the QueerJS Meetup showing a talk and stickers',
-    link: 'https://queerjs.com/'
-  } %>
-
-<% partial 'box' do %>
-  <% partial 'title' do %>
-    QueerJS Cologne celebrated it's wonderful first edition
-  <% end %>
-  <% partial 'text' do %>
-    <p>
-      We supported the first edition of the QueerJS meetup in Cologne (ever!) and it was an inspiring evening with three interesting talks and an amazing community. Thanks again to the
-      <%= partial 'link',
-        locals: {
-          text: 'organizers',
-          link: 'https://queerjs.com/organizers'
-        } %>
-       and to our friends at 
-      <%= partial 'link',
-        locals: {
-          text: 'Dunckelfeld',
-          link: 'https://www.dunckelfeld.de/en/'
-        } %>
-       who provided self-made food and their beautiful location.
-    </p>
-      And we have good news: There will be a second edition coming up soon – possibly as a warming-up event right before the Think About! conference. We will keep you posted.
-    </p>
-  <% end %>
-<% end %>
-
-<%= partial 'hero',
-  locals: {
-    image: 'sponsors.jpg',
-    alt: 'People standing in front of a sponsor booth',
-    link: 'https://think-about.io/sponsors.html'
-  } %>
-
-<% partial 'box' do %>
-  <% partial 'title' do %>
-    Meet our next Gold Sponsor
-  <% end %>
-  <% partial 'text' do %>
-    <p>
-      Making an event like the Think About! happen would not be possible without the support of our sponsors. Thanks to 
     <%= partial 'link',
     locals: {
-      text: 'Metro Markets',
-      link: 'https://www.metro-markets.de/'
+      text: 'A personal experience report',
+      link: 'https://www.womenwhocode.com/blog/think-about-conference-may-23-24-cologne-germany'
     } %>
-      who just joined as our fourth <b>Gold Sponsor</b>. 
+      by <b>Sarah Wachs</b>, a member of Women Who Code.
     </p>
     <p>
-      If you know any company that might be a good fit or want to sponsor yourself please get in touch with us. We have a few sponsor spots left.
+    <b>Laura Kalbag</b>
+     <%= partial 'link',
+    locals: {
+      text: 'summarized her favorite speakers.',
+      link: 'https://laurakalbag.com/great-speakers-from-think-about-conf-2019/'
+    } %>
+    She states "These are fabulous people, accomplished speakers, writing valuable, meaningful and educational talks."
+    </p>
+    <p>
+    <b>Stefan Durski</b> came up with a list of
+     <%= partial 'link',
+    locals: {
+      text: 'The Best Tech Events in North-Rhine Westphalia',
+      link: 'https://life.trivago.com/experience/the-best-tech-events-in-north-rhine-westphalia.html'
+    } %>
+    with the Think About! being one of them.
+    </p>
+    <p>
+    Sociologist & Interaction Designer <b>Sebastian Greger</b> wrote a wonderful article about 
+     <%= partial 'link',
+    locals: {
+      text: 'his personal impressions.',
+      link: 'https://sebastiangreger.net/2019/08/think-about-2019-a-unique-conference'
+    } %>
     </p>
   <% end %>
-
-  <%= partial 'button',
-    locals: {
-      text: 'Get in Touch',
-      link: 'mailto: kontakt@think-about.io'
-    } %>
 <% end %>
 
 <% partial 'box' do %>
